@@ -7,7 +7,7 @@
   --nav-font-alt: "Inter", sans-serif;
   --nav-height: 96px; 
   --hero-bg-fallback: #123267;
-  --hero-accent-blue: #377bed; /* eyebrow text color */
+  --hero-accent-blue: #377bed; 
   --hero-cta-bg: #d97328;
   --hero-cta-hover: #f99144;
   --font-playfair: "Playfair Display", serif;
@@ -57,9 +57,8 @@ body {
   padding: 2.5rem 0;
 }
 
-/* ============================================================
-   1. NAVIGATION
-   ============================================================ */
+/* NAVIGATION SECTION */
+
 .site-header a {
   text-decoration: none;
 }
@@ -295,9 +294,8 @@ body {
 }
 
 
-/* ============================================================
-   2. SECTION-HERO
-   ============================================================ */
+
+/* HERO-SECTION  */
 
 .hero {
   display: block;
@@ -427,9 +425,9 @@ body {
   margin-top: -50px;
 }
 
-/* ============================================================
-   3. BADGES
-   ============================================================ */
+
+/* BADGES SECTION */
+
 .badges {
   padding: 40px 0;
 }
@@ -573,10 +571,8 @@ body {
 }
 
 
+/* REVIEWS SECTION */
 
-/* ============================================================
-    REVIEWS
-   ============================================================ */
 .reviews {
   text-align: center;
 }
@@ -626,7 +622,7 @@ body {
   display: flex;
   margin: 5px 0 18px;
   column-gap: 2px;
-  color: #d97328; /* secondary/accent */
+  color: #d97328; 
 }
 
 .review-card .five-stars i {
@@ -640,9 +636,9 @@ body {
   margin: 0;
 }
 
-/* ============================================================
-   OFFICE
-   ============================================================ */
+
+/* OFFICE-SECTION */
+
 .office-container {
   max-width: 700px;
   margin: 0 auto;
@@ -658,7 +654,7 @@ body {
 }
 
 .office-subtext {
-  color: #0f1e38; /* primary */
+  color: #0f1e38; 
   font-size: 20px;
   line-height: 28px;
   text-align: center;
@@ -714,9 +710,8 @@ body {
   margin-top: 15px;
 }
 
-/* ============================================================
-   FOOTER
-   ============================================================ */
+/* FOOTER-SECTION */
+
 .site-footer {
   position: relative;
   color: #fff;
@@ -815,9 +810,7 @@ body {
   font-size: 20px;
 }
 
-/* ============================================================
-   RESPONSIVE STYLES (MEDIA QUERIES)
-   ============================================================ */
+/* RESPONSIVENESS-MEDIA QUERIES */
 
 /* ---------- min-width: 768px ---------- */
 @media (min-width: 768px) {

@@ -162,9 +162,8 @@ body {
   color: var(--nav-white);
 }
 
-/* ============================================================
-   1. NAVIGATION
-   ============================================================ */
+/* NAVIGATION-SECTION */
+
 .site-header a {
   text-decoration: none;
 }
@@ -229,16 +228,12 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-  /* background-color: rgb(0, 0, 0); */
-  
-  
   background: var(--gradient-dark);
   border-bottom: 1px solid rgba(100, 100, 100, 0.938) ;
-    
   background-position: center;
   background-size: cover;
   padding: 5px 0 8px;
-  /* transition: background-color 0.2s ease; */
+  
 }
 
 .header-main.is-scrolled {
@@ -441,13 +436,10 @@ body {
   color: var(--nav-white) !important;
 }
 
-/* ============================================================
-   2. SECTION-HERO
-   ============================================================ */
+/* HERO-SECTION */
 
    
 .hero {
-  /* position: relative; */
   display: block;
   color: var(--nav-white);
   background: linear-gradient(
@@ -482,7 +474,6 @@ body {
 }
 
 .hero-inner {
-  /* position: relative; */
   z-index: 2;
   max-width: 745px;
   padding: 100px 0 230px 50px;
@@ -523,9 +514,8 @@ body {
   border-radius: 0;
 }
 
-/* ============================================================
-   3. BADGES
-   ============================================================ */
+/* BADGES-SECTION */
+
 .badges {
   padding: 40px 0;
 }
@@ -569,9 +559,9 @@ body {
   filter: grayscale(0);
 }
 
-/* ============================================================
-   4. INTRO
-   ============================================================ */
+
+/* INTRODUCTION-SECTION */
+
 .intro {
   position: relative;
 }
@@ -601,16 +591,12 @@ body {
   height: auto;
 }
 
-/* ============================================================
-   5. APPROACH
-   ============================================================ */
+/* APPROACH-SECTION */
+
 .approach-media img {
   max-width: 100%;
   height: auto;
 }
-
-
-
 
 .approach-text {
   display: flex;
@@ -618,9 +604,9 @@ body {
   justify-content: center;
 }
 
-/* ============================================================
-   6. PLEDGE
-   ============================================================ */
+
+/* PLEDGES-SECTION */
+
 .pledge-text a {
   color: inherit;
 }
@@ -649,9 +635,9 @@ body {
   background: var(--overlay-dark);
 }
 
-/* ============================================================
-   7. ATTORNEY INTRO (PI SECTION)
-   ============================================================ */
+
+/* INTRO-TO-ATTORNEY-SECTION */
+
 .pi-section {
   color: var(--nav-white);
   background:
@@ -738,9 +724,9 @@ body {
   text-align: center;
 }
 
-/* ============================================================
-   8. ATTORNEY
-   ============================================================ */
+
+/* ATTORNEY-SECTION-MAIN */
+
 .attorney {
   padding: 100px 30px;
   background: linear-gradient(to bottom, var(--nav-white), var(--bg-light));
@@ -849,9 +835,8 @@ body {
 
 
 
-/* ============================================================
-   9. FAQ
-   ============================================================ */
+/* FAQ SECTION */
+
 .faq {
   background-image: url("https://cdn-hiobf.nitrocdn.com/TPAWEHMtqaHSEFDtcDDbfLkroIZlIBUX/assets/images/optimized/rev-82ae670/www.helpinginjuredpeople.com/wp-content/uploads/2023/05/shape-arrow.png");
   background-position: center;
@@ -890,9 +875,10 @@ body {
   line-height: 30px;
   margin: 0;
 }
-/* ============================================================
-   10. REVIEWS
-   ============================================================ */
+
+
+/* REVIEWS-SECTION */
+
 .reviews {
   text-align: center;
 }
@@ -901,7 +887,7 @@ body {
   font-family: "Lexend", sans-serif;
   font-weight: 500;
   font-size: 22px;
-  color: var(--hero-accent-blue); /* bleu-de-france */
+  color: var(--hero-accent-blue); 
   margin: 0 0 5px;
 }
 
@@ -942,7 +928,7 @@ body {
   display: flex;
   margin: 5px 0 18px;
   column-gap: 2px;
-  color: var(--nav-secondary); /* secondary/accent */
+  color: var(--nav-secondary); 
 }
 
 .review-card .five-stars i {
@@ -956,9 +942,9 @@ body {
   margin: 0;
 }
 
-/* ============================================================
-   11. TRAFFIC MAP
-   ============================================================ */
+
+/* TRAFFIC-SECTION */
+
 .traffic-map {
   position: relative;
   background-color: rgba(180, 153, 0, 0.205);
@@ -984,7 +970,7 @@ body {
 
 .traffic-map-eyebrow {
   font-weight: bold;
-  color: var(--hero-accent-blue); /* bleu-de-france */
+  color: var(--hero-accent-blue); 
   margin: 0 0 5px;
 }
 
@@ -995,9 +981,9 @@ body {
   border: 2px solid var(--border-light);
 }
 
-/* ============================================================
-   12. OFFICE
-   ============================================================ */
+
+/* OFFICE-SECTION  */
+
 .office-container {
   max-width: 700px;
   margin: 0 auto;
@@ -1069,9 +1055,9 @@ body {
   margin-top: 15px;
 }
 
-/* ============================================================
-   13. FOOTER
-   ============================================================ */
+
+/* FOOTER-SECTION */
+
 .site-footer {
   position: relative;
   color: var(--nav-white);
@@ -1167,9 +1153,9 @@ body {
   font-size: 20px;
 }
 
-/* ============================================================
-   RESPONSIVE STYLES (MEDIA QUERIES)
-   ============================================================ */
+
+/* RESPONSIVENESS-SECTION */
+
 
 /* ---------- min-width: 768px ---------- */
 @media (min-width: 768px) {
@@ -1293,7 +1279,6 @@ body {
     flex: 0 0 50%;
     max-width: 50%;
   }
-
   /* 12. Office */
   .office-container {
     text-align: left;
