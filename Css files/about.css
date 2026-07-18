@@ -7,7 +7,7 @@
   --nav-font-alt: "Inter", sans-serif;
   --nav-height: 96px; 
   --hero-bg-fallback: #123267;
-  --hero-accent-blue: #377bed; 
+  --hero-accent-blue: #377bed; /* eyebrow text color */
   --hero-cta-bg: #d97328;
   --hero-cta-hover: #f99144;
   --font-playfair: "Playfair Display", serif;
@@ -57,8 +57,9 @@ body {
   padding: 2.5rem 0;
 }
 
-/* NAVIGATION SECTION */
-
+/* ============================================================
+   1. NAVIGATION
+   ============================================================ */
 .site-header a {
   text-decoration: none;
 }
@@ -294,8 +295,9 @@ body {
 }
 
 
-
-/* HERO-SECTION  */
+/* ============================================================
+   2. SECTION-HERO
+   ============================================================ */
 
 .hero {
   display: block;
@@ -425,9 +427,9 @@ body {
   margin-top: -50px;
 }
 
-
-/* BADGES SECTION */
-
+/* ============================================================
+   3. BADGES
+   ============================================================ */
 .badges {
   padding: 40px 0;
 }
@@ -452,11 +454,12 @@ body {
 }
 
 .badge-item {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
   padding: 1rem;
 }
 
@@ -571,8 +574,10 @@ body {
 }
 
 
-/* REVIEWS SECTION */
 
+/* ============================================================
+    REVIEWS
+   ============================================================ */
 .reviews {
   text-align: center;
 }
@@ -622,7 +627,7 @@ body {
   display: flex;
   margin: 5px 0 18px;
   column-gap: 2px;
-  color: #d97328; 
+  color: #d97328; /* secondary/accent */
 }
 
 .review-card .five-stars i {
@@ -636,9 +641,9 @@ body {
   margin: 0;
 }
 
-
-/* OFFICE-SECTION */
-
+/* ============================================================
+   OFFICE
+   ============================================================ */
 .office-container {
   max-width: 700px;
   margin: 0 auto;
@@ -654,7 +659,7 @@ body {
 }
 
 .office-subtext {
-  color: #0f1e38; 
+  color: #0f1e38; /* primary */
   font-size: 20px;
   line-height: 28px;
   text-align: center;
@@ -710,8 +715,9 @@ body {
   margin-top: 15px;
 }
 
-/* FOOTER-SECTION */
-
+/* ============================================================
+   FOOTER
+   ============================================================ */
 .site-footer {
   position: relative;
   color: #fff;
@@ -810,15 +816,13 @@ body {
   font-size: 20px;
 }
 
-/* RESPONSIVENESS-MEDIA QUERIES */
+/* ============================================================
+   RESPONSIVE STYLES (MEDIA QUERIES)
+   ============================================================ */
 
 /* ---------- min-width: 768px ---------- */
 @media (min-width: 768px) {
-  /* 3. Badges */
-  .badge-item {
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
+  /* 3. Badges: 33.333% base already gives 3-per-row at all sizes */
 }
 
 /* ---------- min-width: 992px ---------- */
@@ -1015,10 +1019,6 @@ body {
   .about-intro-text h2,
   .intro-pledge-text h2 {
     font-size: 28px;
-  }
-
-  .before-intro h2{
-    margin-top: 40px;
   }
 
   .before-intro p,
