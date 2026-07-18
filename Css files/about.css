@@ -1017,6 +1017,10 @@ body {
     font-size: 28px;
   }
 
+  .before-intro h2{
+    margin-top: 40px;
+  }
+
   .before-intro p,
   .about-intro-text p,
   .intro-pledge-text p {
