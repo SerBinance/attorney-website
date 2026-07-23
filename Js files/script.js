@@ -189,4 +189,90 @@ document.addEventListener("DOMContentLoaded", function () {
 
   });
 
+
+
+  /* ============================
+     Reviews Carousel (mobile)
+  ============================ */
+
+  const reviewsGrid = document.getElementById("reviewsGrid");
+
+  if (reviewsGrid) {
+
+    const reviewCards = Array.from(reviewsGrid.querySelectorAll(".review-card"));
+    const prevBtn = document.querySelector(".review-nav-prev");
+    const nextBtn = document.querySelector(".review-nav-next");
+    const dotsWrap = document.getElementById("reviewsDots");
+
+    let currentIndex = 0;
+
+    // Build the dot indicators
+    if (dotsWrap) {
+      reviewCards.forEach(function (_, i) {
+        const dot = document.createElement("button");
+        dot.type = "button";
+        dot.className = "dot";
+        dot.setAttribute("aria-label", "Go to review " + (i + 1));
+        dot.addEventListener("click", function () {
+          currentIndex = i;
+          updateCarousel();
+        });
+        dotsWrap.appendChild(dot);
+      });
+    }
+
+    const dots = dotsWrap ? Array.from(dotsWrap.querySelectorAll(".dot")) : [];
+
+    function isMobile() {
+      return window.innerWidth <= 767;
+    }
+
+    function updateCarousel() {
+      if (!isMobile()) {
+        reviewsGrid.style.transform = "";
+        return;
+      }
+
+      reviewsGrid.style.transform = "translateX(-" + (currentIndex * 100) + "%)";
+
+      dots.forEach(function (dot, i) {
+        dot.classList.toggle("active", i === currentIndex);
+      });
+    }
+
+    function goNext() {
+      currentIndex = (currentIndex + 1) % reviewCards.length;
+      updateCarousel();
+    }
+
+    function goPrev() {
+      currentIndex = (currentIndex - 1 + reviewCards.length) % reviewCards.length;
+      updateCarousel();
+    }
+
+    if (nextBtn) nextBtn.addEventListener("click", goNext);
+    if (prevBtn) prevBtn.addEventListener("click", goPrev);
+
+    // Swipe support
+    let touchStartX = 0;
+
+    reviewsGrid.addEventListener("touchstart", function (e) {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    reviewsGrid.addEventListener("touchend", function (e) {
+      const touchEndX = e.changedTouches[0].screenX;
+      const diff = touchEndX - touchStartX;
+
+      if (Math.abs(diff) > 40) {
+        diff < 0 ? goNext() : goPrev();
+      }
+    }, { passive: true });
+
+    window.addEventListener("resize", updateCarousel);
+
+    updateCarousel();
+
+  }
+
 });

@@ -957,6 +957,72 @@ body {
   margin: 0;
 }
 
+/* ---------- Reviews Carousel (mobile) ---------- */
+/* No-op on desktop by default; arrows/dots hidden until the mobile
+   media query below switches everything into carousel mode. */
+.reviews-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reviews-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.review-nav {
+  display: none; /* shown only on mobile */
+  flex: 0 0 auto;
+  width: 46px;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: var(--nav-primary);
+  color: var(--nav-white);
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(15, 30, 56, 0.25);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  z-index: 2;
+}
+
+.review-nav:hover {
+  background: var(--nav-secondary);
+  transform: translateY(-2px);
+}
+
+.review-nav:active {
+  transform: translateY(0);
+}
+
+.reviews-dots {
+  display: none; /* shown only on mobile */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.reviews-dots .dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #d9d9d9;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.reviews-dots .dot.active {
+  background: var(--nav-secondary);
+  transform: scale(1.25);
+}
+
 /* ============================================================
    11. TRAFFIC MAP
    ============================================================ */
@@ -1622,15 +1688,29 @@ body {
     margin-bottom: 15px;
   }
 
-  /* 10. Reviews */
+  /* 10. Reviews — carousel mode */
+  .review-nav {
+    display: flex;
+  }
+
+  .reviews-dots {
+    display: flex;
+  }
+
   .reviews-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: nowrap;
+    grid-template-columns: unset;
+    transition: transform 0.45s cubic-bezier(0.22, 0.61, 0.36, 1);
+    will-change: transform;
   }
 
   .review-card {
+    flex: 0 0 100%;
+    max-width: 100%;
     text-align: center;
     border: 0;
-    padding: 20px 0 0;
+    padding: 10px 15px 0;
   }
 
   .review-card:first-child {
@@ -1646,7 +1726,7 @@ body {
     line-height: 22px;
     max-width: 700px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 5px;
   }
 
   /* 11. Traffic Map */
