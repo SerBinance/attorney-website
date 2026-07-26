@@ -1496,6 +1496,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
   }
 
   .dropdown-toggle[aria-expanded="true"] i {
