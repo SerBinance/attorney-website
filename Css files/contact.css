@@ -849,12 +849,20 @@ body {
   .top-bar-content {
     display: block;
   }
+
+  .hero-img-guy{
+    display: none;
+  }
 }
 
 /* ---------- min-width: 992px ---------- */
 @media (min-width: 992px) {
   /* 1. Navigation */
   .navbar-toggler {
+    display: none;
+  }
+  
+  .hero-img-guy{
     display: none;
   }
 
@@ -901,6 +909,10 @@ body {
   /* 2. Hero */
   .hero-inner {
     max-width: 645px;
+  }
+
+  .hero-img-guy{
+    display: none;
   }
 
   .hero-headline {
