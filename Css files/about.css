@@ -465,14 +465,11 @@ body {
 
 .badge-item img {
   width: auto;
-  max-width: 100px;
-  filter: grayscale(1);
+  max-width: 100%;
   transition: filter 0.2s ease;
 }
 
-.badge-item img:hover {
-  filter: grayscale(0);
-}
+
 
 
 /* BEFORE INTRO */
@@ -937,6 +934,10 @@ body {
   /* 2. Hero */
   .contact-card h1 {
     font-size: 2.8rem;
+  }
+
+  .badge-item-1{
+    display: none;
   }
 
   .contact-card {
