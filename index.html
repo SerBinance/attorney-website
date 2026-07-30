@@ -1,659 +1,876 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Barr Jane</title>
-  <link rel="stylesheet" href="./Css files/style.css" class="css">
-  <script src="https://kit.fontawesome.com/9f29008fe7.js" crossorigin="anonymous"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barr Jane</title>
+    <link rel="stylesheet" href="./Css files/style.css" class="css" />
+    <script
+      src="https://kit.fontawesome.com/9f29008fe7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header class="site-header" id="masthead">
+      <div class="header-main" id="headerMain">
+        <nav class="navbar" aria-label="Primary navigation">
+          <div class="navbar-row">
+            <!-- Logo -->
+            <div class="navbar-brand-col">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="./images/logo-1.jpg"
+                  alt="I J Obijuru-Uzodinma Esq"
+                  width="170"
+                  height="83"
+                  class="firm-logo"
+                />
+              </a>
+            </div>
 
-<!-- NAVIGATION -->
-<header class="site-header" id="masthead">
-
-  
-  <div class="header-main" id="headerMain">
-    <nav class="navbar" aria-label="Primary navigation">
-      <div class="navbar-row">
-        
-        <!-- Logo -->
-        <div class="navbar-brand-col">
-          <a class="navbar-brand" href="#">
-            <img
-              src="./images/logo-1.jpg"
-              alt="I J Obijuru-Uzodinma Esq"
-              width="170"
-              height="83"
-              class="firm-logo"
+            <!-- Mobile hamburger toggle -->
+            <button
+              type="button"
+              class="navbar-toggler"
+              id="navToggler"
+              aria-expanded="false"
+              aria-controls="navbarCollapse"
+              aria-label="Toggle navigation menu"
             >
+              <span class="navbar-toggler-icon" aria-hidden="true">
+                <span class="bar bar-top"></span>
+                <span class="bar bar-mid"></span>
+                <span class="bar bar-bottom"></span>
+              </span>
+            </button>
+
+            <!-- Menu column: top utility bar + main nav -->
+
+            <div class="navbar-menu-col">
+              <div class="navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav" id="menuMain">
+                  <li class="nav-item has-dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle"
+                      aria-expanded="false"
+                      aria-controls="ddLegalServices"
+                      >Legal Services
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu" id="ddLegalServices">
+                      <li>
+                        <a href="" class="dropdown-item" aria-current="page"
+                          >Civil Legation</a
+                        >
+                      </li>
+
+                      <li>
+                        <a href="" class="dropdown-item"
+                          >Corporate & Commercial Law</a
+                        >
+                      </li>
+
+                      <li>
+                        <a href="" class="dropdown-item"
+                          >Property & Real Estate</a
+                        >
+                      </li>
+
+                      <li>
+                        <a href="" class="dropdown-item">Family Law</a>
+                      </li>
+
+                      <li>
+                        <a href="" class="dropdown-item">Contract Drafting</a>
+                      </li>
+
+                      <li>
+                        <a href="" class="dropdown-item">Legal Advisory</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item has-dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle"
+                      aria-expanded="false"
+                      aria-controls="ddLocations"
+                      >Location
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu" id="ddLocations">
+                      <li><a href="" class="dropdown-item">Enugu State</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item has-dropdown">
+                    <a
+                      href="./html files/about.html"
+                      class="nav-link dropdown-toggle"
+                      aria-expanded="false"
+                      aria-controls="ddAbout"
+                      >About
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu" id="ddAbout">
+                      <li>
+                        <a
+                          href="./html files/about.html"
+                          class="dropdown-item"
+                          rel="nofollow"
+                          target="_blank"
+                          >I.J. Obijuru-Uzodinma</a
+                        >
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item" rel="nofollow"
+                          >Reviews</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="" class="nav-link" rel="nofollow">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Spacer that mirrors the fixed nav's height so page content isn't hidden underneath it -->
+      <div class="header-spacer" id="headerSpacer" aria-hidden="true"></div>
+    </header>
+
+    <!-- SECTION-HERO -->
+    <section class="hero" aria-label="Introduction">
+      <div class="container">
+        <div class="hero-inner">
+          <h1 class="hero-eyebrow">Cooperate Lawyer in Nigeria</h1>
+
+          <h2 class="hero-headline">Your Fight Becomes Our Mission</h2>
+
+          <p class="hero-subtext">
+            Over 7 Years of Collective Experience Helping<br />
+            People in Nigeria
+          </p>
+
+          <a href="" target="_blank" rel="nofollow noopener" class="hero-cta">
+            Book a Consultation
           </a>
         </div>
 
-        <!-- Mobile hamburger toggle -->
-        <button
-          type="button"
-          class="navbar-toggler"
-          id="navToggler"
-          aria-expanded="false"
-          aria-controls="navbarCollapse"
-          aria-label="Toggle navigation menu"
-        >
-          <span class="navbar-toggler-icon" aria-hidden="true">
-            <span class="bar bar-top"></span>
-            <span class="bar bar-mid"></span>
-            <span class="bar bar-bottom"></span>
-          </span>
-        </button>
+        <div class="hero-img-guy">
+          <img
+            src="./images/barr-jane-main-1.png"
+            alt="I.J. Obijuru-Uzodinma"
+            width="600"
+            height="400"
+            class="hero-img"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
 
-        <!-- Menu column: top utility bar + main nav -->
+    <!-- BADGES -->
+    <section class="badges" aria-label="Memberships and recognitions">
+      <div class="badges-container">
+        <p class="badges-heading">Memberships &amp; Recognitions</p>
 
-        <div class="navbar-menu-col">
-          <div class="navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav" id="menuMain">
-              <li class="nav-item has-dropdown">
-                <a href="#" class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="ddLegalServices">Legal Services
-                  <i class="fa-solid fa-chevron-down"></i>
-                </a>
+        <ul class="badges-list">
+          <li class="badge-item">
+            <img
+              src="./images/top_100_verdict-1-2.png"
+              alt="Law Firm"
+              width="156"
+              height="146"
+              loading="lazy"
+            />
+          </li>
 
-                               
-                <ul class="dropdown-menu" id="ddLegalServices">
+          <li class="badge-item">
+            <img
+              src="./images/Image-36-1.png"
+              alt="Super Lawyers"
+              width="129"
+              height="90"
+              loading="lazy"
+            />
+          </li>
 
-                  <li>
-                    <a href="" class="dropdown-item" aria-current="page">Civil Legation</a>
-                  </li>
+          <li class="badge-item">
+            <img
+              src="./images/logo-01-2.png"
+              alt="Multi-Million Dollar Advocates Forum"
+              width="92"
+              height="92"
+              loading="lazy"
+            />
+          </li>
 
-                  <li>
-                    <a href="" class="dropdown-item">Corporate & Commercial Law</a>
-                  </li>
+          <li class="badge-item">
+            <img
+              src="./images/top_100_verdict-1-2.png"
+              alt="Law Firm"
+              width="156"
+              height="146"
+              loading="lazy"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
 
-                  <li>
-                    <a href="" class="dropdown-item">Property & Real Estate</a>
-                  </li>
+    <!-- INTRO -->
+    <section class="intro">
+      <div class="intro-container">
+        <div class="intro-text">
+          <h2>Seek Help From an Experienced Corporate Lawyer</h2>
 
-                  <li>
-                    <a href="" class="dropdown-item">Family Law</a>
-                  </li>
+          <p>
+            Navigating legal matters in Nigeria can be challenging and often
+            requires trusted legal guidance. At the Chambers of I.J.
+            Obijuru-Uzodinma, ESQ, we are committed to providing exceptional
+            legal representation with professionalism, integrity, and unwavering
+            dedication to every client we serve.
+          </p>
 
-                  <li>
-                    <a href="" class="dropdown-item">Contract Drafting</a>
-                  </li>
+          <p>
+            We carefully guide individuals, businesses, and organizations
+            through every stage of the legal process, offering practical advice
+            and effective representation tailored to each client’s unique
+            circumstances. Our commitment to excellence is reflected both inside
+            and outside the courtroom through continuous professional
+            development, ethical practice, and a client-first approach.
+          </p>
 
-                  <li>
-                    <a href="" class="dropdown-item">Legal Advisory</a>
-                  </li>
+          <p>
+            As a Solicitor and Advocate of the Federal Republic of Nigeria, I.J.
+            Obijuru-Uzodinma, ESQ is dedicated to delivering sound legal
+            solutions across a broad range of legal matters. Every case is
+            handled with diligence, attention to detail, and a strong commitment
+            to protecting our clients’ rights and achieving the best possible
+            outcomes.
+          </p>
+        </div>
 
-                </ul>
+        <div class="intro-media"></div>
+      </div>
+    </section>
 
-              </li>
+    <!-- APPROACH -->
+    <section class="approach">
+      <div class="approach-container">
+        <div class="approach-media">
+          <img
+            class="approach-img-desktop"
+            src="./images/barr-jane-long-image.jpg"
+            alt="Commitment to every client"
+            width="542"
+            height="620"
+            loading="lazy"
+          />
+        </div>
 
-              <li class="nav-item has-dropdown">
-                <a href="#" class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="ddLocations">Location
-                  <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                
-                <ul class="dropdown-menu" id="ddLocations">
-                  <li><a href="" class="dropdown-item">Enugu State</a></li>
-                </ul>
-              </li>
+        <div class="approach-text">
+          <h2>Our Approach</h2>
 
-              <li class="nav-item has-dropdown">
-                <a href="./html files/about.html" class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="ddAbout">About
-                  <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                
-                
-                <ul class="dropdown-menu" id="ddAbout">
-                  <li><a href="./html files/about.html" class="dropdown-item" rel="nofollow" target="_blank">I.J. Obijuru-Uzodinma</a></li>
-                  <li><a href="" class="dropdown-item" rel="nofollow">Reviews</a></li>
-                </ul>
-              </li>
+          <p>
+            What sets our practice apart is our commitment to combining
+            personalized legal service with the expertise and capacity to handle
+            complex legal matters. Every client receives individual attention,
+            practical guidance, and strategic representation tailored to their
+            unique circumstances, regardless of the nature or complexity of the
+            case.
+          </p>
 
-              <li class="nav-item">
-                <a href="" class="nav-link" rel="nofollow">Contact</a>
-              </li>
-            </ul>
+          <p>
+            Our commitment to professionalism, integrity, and client-focused
+            representation has earned the trust of individuals, businesses, and
+            organizations seeking dependable legal services. Choose the Chambers
+            of I.J. Obijuru-Uzodinma, ESQ, and you&rsquo;ll be choosing a legal
+            practice dedicated to protecting your rights, advancing your
+            interests, and delivering practical legal solutions. Engage our
+            services with confidence, knowing your legal matters are in capable
+            and trusted hands.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLEDGE -->
+    <section class="pledge">
+      <div class="pledge-container">
+        <div class="pledge-text">
+          <h2>Respect, Trust &amp; Compassion. Our Pledge To You.</h2>
+
+          <p>
+            Whether you are facing a legal dispute, seeking trusted legal
+            advice, or protecting your personal or business interests, having
+            experienced legal representation can make all the difference. Legal
+            matters can be complex, but you don&rsquo;t have to navigate them
+            alone.
+          </p>
+
+          <p>
+            At the Chambers of I.J. Obijuru-Uzodinma, ESQ, we are committed to
+            protecting our clients&rsquo; rights and providing practical legal
+            solutions with integrity, professionalism, and diligence. No matter
+            the complexity of your legal matter, we stand by your side, offering
+            clear guidance and dedicated representation every step of the way.
+          </p>
+
+          <p>
+            With us, you&rsquo;re not just engaging a legal practitioner,
+            you&rsquo;re gaining a trusted advocate committed to pursuing your
+            best interests and achieving the most favorable outcome possible.
+            When uncertainty arises, you can rely on our experience, dedication,
+            and unwavering commitment to justice.
+          </p>
+
+          <p>
+            When you need trusted legal guidance, we&rsquo;re here to provide
+            the support and representation you deserve. Contact the Chambers of
+            <strong>I.J. Obijuru-Uzodinma, ESQ</strong> at
+            <a
+              href="tel:+2348165525271"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><strong>816 552 5271</strong></a
+            >
+            to schedule a consultation and discover how we can assist you with
+            your legal needs.
+          </p>
+        </div>
+
+        <div
+          class="pledge-media"
+          role="img"
+          aria-label="Person consulting with an attorney"
+        ></div>
+      </div>
+    </section>
+
+    <!-- ATTORNEY INTRO (PI SECTION) -->
+    <section class="pi-section">
+      <div class="pi-container">
+        <div class="pi-left">
+          <h2>Solicitor &amp; Advocate in Nigeria</h2>
+
+          <p>
+            The Chambers of <strong>I.J. Obijuru-Uzodinma, ESQ</strong> is
+            committed to providing trusted legal services to individuals,
+            businesses, and organizations in
+            <a href="" target="_blank" rel="noopener noreferrer"
+              ><strong>Enugu</strong></a
+            >,
+            <a href="" target="_blank" rel="noopener noreferrer"
+              ><strong>Lagos</strong></a
+            >,
+            <a href="" target="_blank" rel="noopener noreferrer"
+              ><strong>Abuja</strong></a
+            >,
+            <a href="" target="_blank" rel="noopener noreferrer"
+              ><strong>Port Harcourt</strong></a
+            >, and
+            <a href="" target="_blank" rel="noopener noreferrer"
+              ><strong>Imo</strong></a
+            >. We proudly serve clients across Nigeria, providing trusted legal
+            representation and practical legal solutions tailored to the unique
+            needs of individuals, businesses, and organizations. Our commitment
+            to professionalism, integrity, and excellence ensures that every
+            client receives dedicated legal support from consultation to
+            resolution.
+          </p>
+
+          <p>
+            Whether you require legal representation in court, strategic legal
+            advice, contract drafting and review, dispute resolution, or
+            assistance with complex legal matters, we are committed to
+            protecting your rights and advancing your interests. With
+            professionalism, integrity, and a client-focused approach, we
+            provide practical legal solutions tailored to your unique
+            circumstances, standing beside you every step of the way in the
+            pursuit of justice.
+          </p>
+
+          <img
+            src="./images/courtimage.jpg"
+            alt="Courtroom image"
+            width="641"
+            height="376"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="pi-right">
+          <ul class="pi-checklist">
+            <li>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i
+              >Dedicated Legal Representation
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i
+              >Personalized attention to Every case
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i
+              >Strategic Legal Advice &amp; Guidance
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i
+              >Professional &amp; Ethical Practice
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i
+              >Effective Dispute Resolution
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i
+              >Committed to Protecting Your Rights
+            </li>
+          </ul>
+
+          <p>
+            Whether you are facing a civil dispute, navigating a business
+            transaction, resolving a family matter, or seeking trusted legal
+            advice, our dedicated practice is here to provide the guidance and
+            representation you need. At the Chambers of
+            <strong>I.J. Obijuru-Uzodinma, ESQ</strong>, we serve individuals,
+            businesses, and organizations across a broad range of legal matters.
+            With professionalism, sound legal knowledge, and unwavering
+            dedication, we are committed to delivering practical solutions
+            tailored to every client's unique needs.
+          </p>
+
+          <p>
+            At the Chambers of <strong>I.J. Obijuru-Uzodinma, ESQ</strong>,
+            every client receives the personalized attention they deserve. We
+            take the time to understand your circumstances, develop effective
+            legal strategies, and provide dedicated representation with
+            integrity, diligence, and a steadfast commitment to achieving the
+            best possible outcome for your legal matter.
+          </p>
+
+          <p class="pi-cta-wrap">
+            <a href="" target="_blank" rel="nofollow" class="pi-cta">
+              Book a Consultation
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ATTORNEY -->
+    <section class="attorney">
+      <div class="attorney-container">
+        <div class="attorney-heading">
+          <h2>Meet Our Attorney</h2>
+
+          <p>Dedicated to Pursuing Your Case To Its Just End.</p>
+        </div>
+
+        <div class="attorney-card">
+          <img
+            src="./images/barr-jane-main-1.png"
+            alt="I.J. Obijuru-Uzodinma, ESQ"
+            class="attorney-photo"
+            loading="lazy"
+          />
+
+          <div class="attorney-info">
+            <h3>I.J. Obijuru-Uzodinma</h3>
+
+            <div class="attorney-bio">
+              <p>
+                Jane Ijeoma Obijuru-Uzodinma, Esq. is a Solicitor and Advocate
+                of the Supreme Court of Nigeria with over seven years of legal
+                experience serving individuals, families, and businesses.
+                Through I.J. Obijuru Uzodinma, Esq., she provides trusted legal
+                services in property, criminal, corporate, and civil law,
+                helping clients navigate legal matters with confidence, clarity,
+                and professionalism. Learn more about her.
+              </p>
+            </div>
+            <a
+              class="btn"
+              href="./html files/about.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Meet Jane
+            </a>
           </div>
         </div>
       </div>
-    </nav>
-  </div>
-  <!-- Spacer that mirrors the fixed nav's height so page content isn't hidden underneath it -->
-  <div class="header-spacer" id="headerSpacer" aria-hidden="true"></div>
-</header>
-
-
-<!-- SECTION-HERO -->
-<section class="hero" aria-label="Introduction">
-
-  <div class="container">
-
-    <div class="hero-inner">
-
-      <h1 class="hero-eyebrow">Cooperate Lawyer in Nigeria</h1>
-
-      <h2 class="hero-headline">Your Fight Becomes Our Mission</h2>
-
-      <p class="hero-subtext">
-        Over 7 Years of Collective Experience Helping<br>
-        People in Nigeria
-      </p>
-
-      <a
-        href=""
-        target="_blank"
-        rel="nofollow noopener"
-        class="hero-cta"
-      >
-        Book a Consultation
-      </a>
-
-      
-    </div>
-
-    <div class="hero-img-guy">
-
-      <img src="./images/barr-jane-main-1.png" alt="I.J. Obijuru-Uzodinma" width="600" height="400" class="hero-img" loading="lazy">
-
-
-    </div>  
-
-  </div>
-
-</section>
-
-<!-- BADGES -->
-<section class="badges" aria-label="Memberships and recognitions">
-
-  <div class="badges-container">
-
-    <p class="badges-heading">Memberships &amp; Recognitions</p>
-
-    <ul class="badges-list">
-
-      <li class="badge-item">
-        <img src="./images/top_100_verdict-1-2.png" alt="Law Firm" width="156" height="146" loading="lazy">
-      </li>
-
-      <li class="badge-item">
-        <img src="./images/Image-36-1.png" alt="Super Lawyers" width="129" height="90" loading="lazy">
-      </li>
-
-      <li class="badge-item">
-        <img src="./images/logo-01-2.png" alt="Multi-Million Dollar Advocates Forum" width="92" height="92" loading="lazy">
-      </li>
-
-      <li class="badge-item">
-        <img src="./images/top_100_verdict-1-2.png" alt="Law Firm" width="156" height="146" loading="lazy">
-      </li>
-      
-    </ul>
-  </div>
-
-</section>
-
-<!-- INTRO -->
-<section class="intro">
-  <div class="intro-container">
-    <div class="intro-text">
-
-      <h2>Seek Help From an Experienced Corporate Lawyer</h2>
-
-      <p>
-        Navigating legal matters in Nigeria can be challenging and often requires trusted legal guidance. At the Chambers of I.J. Obijuru-Uzodinma, ESQ, we are committed to providing exceptional legal representation with professionalism, integrity, and unwavering dedication to every client we serve.
-      </p>
-
-      <p>
-        We carefully guide individuals, businesses, and organizations through every stage of the legal process, offering practical advice and effective representation tailored to each client’s unique circumstances. Our commitment to excellence is reflected both inside and outside the courtroom through continuous professional development, ethical practice, and a client-first approach.
-      </p>
-
-      <p>
-        As a Solicitor and Advocate of the Federal Republic of Nigeria, I.J. Obijuru-Uzodinma, ESQ is dedicated to delivering sound legal solutions across a broad range of legal matters. Every case is handled with diligence, attention to detail, and a strong commitment to protecting our clients’ rights and achieving the best possible outcomes.
-      </p>
-
-    </div>
-
-    <div class="intro-media">
-      
-    </div>
-
-  </div>
-</section>
-
-<!-- APPROACH -->
-<section class="approach">
-  <div class="approach-container">
-    <div class="approach-media">
-      <img
-        class="approach-img-desktop"
-        src="./images/barr-jane-long-image.jpg"
-        alt="Commitment to every client"
-        width="542"
-        height="620"
-        loading="lazy"
-      >
-      
-    </div>
-
-    <div class="approach-text">
-
-      <h2>Our Approach</h2>
-
-      <p>
-        What sets our practice apart is our commitment to combining personalized legal service with the expertise and capacity to handle complex legal matters. Every client receives individual attention, practical guidance, and strategic representation tailored to their unique circumstances, regardless of the nature or complexity of the case.
-      </p>
-
-      <p>
-        Our commitment to professionalism, integrity, and client-focused representation has earned the trust of individuals, businesses, and organizations seeking dependable legal services. Choose the Chambers of I.J. Obijuru-Uzodinma, ESQ, and you&rsquo;ll be choosing a legal practice dedicated to protecting your rights, advancing your interests, and delivering practical legal solutions. Engage our services with confidence, knowing your legal matters are in capable and trusted hands.
-      </p>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- PLEDGE -->
-<section class="pledge">
-
-  <div class="pledge-container">
-
-    <div class="pledge-text">
-
-      <h2>Respect, Trust &amp; Compassion. Our Pledge To You.</h2>
-
-      <p>
-        Whether you are facing a legal dispute, seeking trusted legal advice, or protecting your personal or business interests, having experienced legal representation can make all the difference. Legal matters can be complex, but you don&rsquo;t have to navigate them alone.
-      </p>
-
-      <p>
-        At the Chambers of I.J. Obijuru-Uzodinma, ESQ, we are committed to protecting our clients&rsquo; rights and providing practical legal solutions with integrity, professionalism, and diligence. No matter the complexity of your legal matter, we stand by your side, offering clear guidance and dedicated representation every step of the way.
-      </p>
-
-      <p>
-        With us, you&rsquo;re not just engaging a legal practitioner, you&rsquo;re gaining a trusted advocate committed to pursuing your best interests and achieving the most favorable outcome possible. When uncertainty arises, you can rely on our experience, dedication, and unwavering commitment to justice.
-      </p>
-
-      <p>
-        When you need trusted legal guidance, we&rsquo;re here to provide the support and representation you deserve. Contact the Chambers of <strong>I.J. Obijuru-Uzodinma, ESQ</strong> at <a href="tel:+2348165525271" target="_blank" rel="noopener noreferrer"><strong>816 552 5271</strong></a> to schedule a consultation and discover how we can assist you with your legal needs.
-      </p>
-
-    </div>
-
-    <div class="pledge-media" role="img" aria-label="Person consulting with an attorney"></div>
-  </div>
-</section>
-
-<!-- ATTORNEY INTRO (PI SECTION) -->
-<section class="pi-section">
-
-  <div class="pi-container">
-
-    <div class="pi-left">
-
-      <h2>Solicitor &amp; Advocate in Nigeria</h2>
-
-      <p>
-        The Chambers of <strong>I.J. Obijuru-Uzodinma, ESQ</strong> is committed to providing trusted legal services to individuals, businesses, and organizations in <a href="" target="_blank" rel="noopener noreferrer"><strong>Enugu</strong></a>, <a href="" target="_blank" rel="noopener noreferrer"><strong>Lagos</strong></a>, <a href="" target="_blank" rel="noopener noreferrer"><strong>Abuja</strong></a>, <a href="" target="_blank" rel="noopener noreferrer"><strong>Port Harcourt</strong></a>, and <a href="" target="_blank" rel="noopener noreferrer"><strong>Imo</strong></a>. We proudly serve clients across Nigeria, providing trusted legal representation and practical legal solutions tailored to the unique needs of individuals, businesses, and organizations. Our commitment to professionalism, integrity, and excellence ensures that every client receives dedicated legal support from consultation to resolution.
-      </p>
-
-      <p>
-        Whether you require legal representation in court, strategic legal advice, contract drafting and review, dispute resolution, or assistance with complex legal matters, we are committed to protecting your rights and advancing your interests. With professionalism, integrity, and a client-focused approach, we provide practical legal solutions tailored to your unique circumstances, standing beside you every step of the way in the pursuit of justice.
-      </p>
-
-      <img src="./images/courtimage.jpg" alt="Courtroom image" width="641" height="376" loading="lazy">
-
-    </div>
-
-    <div class="pi-right">
-
-      <ul class="pi-checklist">
-
-        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Dedicated Legal Representation</li>
-        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Personalized attention to Every case</li>
-        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Strategic Legal Advice &amp; Guidance</li>
-        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Professional &amp; Ethical Practice</li>
-        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Effective Dispute Resolution</li>
-        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Committed to Protecting Your Rights</li>
-      </ul>
-
-      <p>
-        Whether you are facing a civil dispute, navigating a business transaction, resolving a family matter, or seeking trusted legal advice, our dedicated practice is here to provide the guidance and representation you need. At the Chambers of <strong>I.J. Obijuru-Uzodinma, ESQ</strong>, we serve individuals, businesses, and organizations across a broad range of legal matters. With professionalism, sound legal knowledge, and unwavering dedication, we are committed to delivering practical solutions tailored to every client's unique needs.
-      </p>
-
-      <p>
-        At the Chambers of <strong>I.J. Obijuru-Uzodinma, ESQ</strong>, every client receives the personalized attention they deserve. We take the time to understand your circumstances, develop effective legal strategies, and provide dedicated representation with integrity, diligence, and a steadfast commitment to achieving the best possible outcome for your legal matter.
-      </p>
-
-      <p class="pi-cta-wrap">
-        <a href="" target="_blank" rel="nofollow" class="pi-cta">
-          Book a Consultation
-        </a>
-      </p>
-
-    </div>
-  </div>
-</section>
-
-<!-- ATTORNEY -->
-<section class="attorney">
-
-  <div class="attorney-container">
-
-    <div class="attorney-heading">
-      <h2>Meet Our Attorney</h2>
-
-      <p>Dedicated to Pursuing Your Case To Its Just End.</p>
-    </div>
-
-    <div class="attorney-card">
-
-      <img src="./images/barr-jane-main-1.png" alt="I.J. Obijuru-Uzodinma, ESQ" class="attorney-photo" loading="lazy">
-
-      <div class="attorney-info">
-
-        <h3>I.J. Obijuru-Uzodinma</h3>
-
-        <div class="attorney-bio">
-          <p>
-            Jane Ijeoma Obijuru-Uzodinma, Esq. is a Solicitor and Advocate of the Supreme Court of Nigeria with over seven years of legal experience serving individuals, families, and businesses. Through I.J. Obijuru Uzodinma, Esq., she provides trusted legal services in property, criminal, corporate, and civil law, helping clients navigate legal matters with confidence, clarity, and professionalism. Learn more about her.
-          </p>
-          
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <div class="faq-container">
+        <div class="faq-col">
+          <h2>Frequently Asked Questions</h2>
+
+          <div class="faq-item">
+            <h3>Do I need a lawyer before starting a legal case?</h3>
+
+            <p>
+              While it is possible to handle certain legal matters on your own,
+              engaging a qualified lawyer from the outset can help you
+              understand your rights, avoid costly mistakes, and ensure the
+              correct legal procedures are followed. Seeking legal advice early
+              often improves your chances of resolving a matter efficiently and
+              effectively.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>What types of legal services do you provide?</h3>
+
+            <p>
+              The Chambers of I.J. Obijuru-Uzodinma, ESQ provides legal services
+              across a broad range of practice areas, including civil
+              litigation, corporate &amp; commercial law, property transactions,
+              contract drafting &amp; review, family law, employment matters,
+              legal advisory services, and dispute resolution. If you&rsquo;re
+              unsure whether your matter falls within our practice, please
+              contact us for guidance.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>How do I schedule a consultation?</h3>
+
+            <p>
+              Scheduling a consultation is simple. You may contact our office by
+              phone, email, or through the contact form on our website. During
+              your consultation, we&rsquo;ll listen to your concerns, assess
+              your legal matter, and discuss the most appropriate course of
+              action based on your circumstances.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>What should I bring to my first consultation?</h3>
+
+            <p>
+              For your initial consultation, it&rsquo;s helpful to bring any
+              documents relevant to your legal matter, including contracts,
+              correspondence, court documents, identification, or any other
+              records that may assist us in understanding your case. The more
+              information you provide, the better we can evaluate your
+              situation.
+            </p>
+          </div>
         </div>
-        <a class="btn" href="./html files/about.html" target="_blank" rel="noopener noreferrer">
-          Meet Jane
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- FAQ -->
-<section class="faq">
-
-  <div class="faq-container">
-
-    <div class="faq-col">
-
-      <h2>Frequently Asked Questions</h2>
-
-      <div class="faq-item">
-
-        <h3>Do I need a lawyer before starting a legal case?</h3>
-
-        <p>
-          While it is possible to handle certain legal matters on your own, engaging a qualified lawyer from the outset can help you understand your rights, avoid costly mistakes, and ensure the correct legal procedures are followed. Seeking legal advice early often improves your chances of resolving a matter efficiently and effectively.
-        </p>
-
-      </div>
-
-      <div class="faq-item">
-
-        <h3>What types of legal services do you provide?</h3>
-
-        <p>
-          The Chambers of I.J. Obijuru-Uzodinma, ESQ provides legal services across a broad range of practice areas, including civil litigation, corporate &amp; commercial law, property transactions, contract drafting &amp; review, family law, employment matters, legal advisory services, and dispute resolution. If you&rsquo;re unsure whether your matter falls within our practice, please contact us for guidance.
-        </p>
-
-      </div>
-
-      <div class="faq-item">
-
-        <h3>How do I schedule a consultation?</h3>
-
-        <p>
-          Scheduling a consultation is simple. You may contact our office by phone, email, or through the contact form on our website. During your consultation, we&rsquo;ll listen to your concerns, assess your legal matter, and discuss the most appropriate course of action based on your circumstances.
-        </p>
-
-      </div>
-
-      <div class="faq-item">
-
-        <h3>What should I bring to my first consultation?</h3>
-
-        <p>
-          For your initial consultation, it&rsquo;s helpful to bring any documents relevant to your legal matter, including contracts, correspondence, court documents, identification, or any other records that may assist us in understanding your case. The more information you provide, the better we can evaluate your situation.
-        </p>
-
-      </div>
-
-    </div>
-
-    <div class="faq-col">
-
-      <div class="faq-item">
-
-        <h3>How much do your legal services cost?</h3>
-
-        <p>
-          Legal fees vary depending on the nature, complexity, and scope of the services required. Following an initial consultation, we&rsquo;ll explain the expected costs and provide a clear fee arrangement before any legal work begins, ensuring transparency throughout the process.
-        </p>
-
-      </div>
-
-      <div class="faq-item">
-
-        <h3>Can legal disputes be resolved without going to court?</h3>
-
-        <p>
-          Yes. Many legal disputes can be resolved through negotiation, mediation, arbitration, or other forms of alternative dispute resolution. Where appropriate, we work toward practical and cost-effective solutions outside the courtroom while protecting our clients&rsquo; rights and interests.
-        </p>
-
-      </div>
-
-      <div class="faq-item">
-
-        <h3>How long will it take to resolve my legal matter?</h3>
-
-        <p>
-          The timeline for resolving a legal matter can vary significantly based on its complexity and the court's schedule. Simple cases might be resolved within a few months, while more complex matters could take several years. During your initial consultation, we can provide a more accurate estimate based on the specifics of your case.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- REVIEWS -->
-<section class="reviews">
-  <div class="reviews-container">
-
-    <p class="reviews-eyebrow">Some Of Our Past Clients</p>
-
-    <h2 class="reviews-heading">What Our Clients Are Saying</h2>
-
-    <div class="reviews-carousel">
-
-      <button type="button" class="review-nav review-nav-prev" aria-label="Previous review">
-        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
-      </button>
-
-      <div class="reviews-viewport">
-        <ul class="reviews-grid" id="reviewsGrid">
-
-          <li class="review-card">
-
-            <h3>Nwoke Nnamdi</h3>
-
-            <span class="five-stars" aria-label="5 out of 5 stars">
-              <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
-            </span>
+        <div class="faq-col">
+          <div class="faq-item">
+            <h3>How much do your legal services cost?</h3>
 
             <p>
-              I.J. Obijuru-Uzodinma, ESQ provided clear legal guidance throughout the process and kept me informed every step of the way. I always felt that my concerns were heard and that my matter received the attention it deserved. I&rsquo;m grateful for the professionalism, dedication, and support I received.
+              Legal fees vary depending on the nature, complexity, and scope of
+              the services required. Following an initial consultation,
+              we&rsquo;ll explain the expected costs and provide a clear fee
+              arrangement before any legal work begins, ensuring transparency
+              throughout the process.
             </p>
+          </div>
 
-          </li>
-
-          <li class="review-card">
-
-            <h3>Chukwudi Stephen</h3>
-
-            <span class="five-stars" aria-label="5 out of 5 stars">
-              <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
-            </span>
+          <div class="faq-item">
+            <h3>Can legal disputes be resolved without going to court?</h3>
 
             <p>
-              Working with I.J. Obijuru-Uzodinma, ESQ was a reassuring experience. Every stage of the process was handled with clarity and professionalism, and I was consistently updated on the progress of my case. Their commitment, responsiveness, and attention to detail gave me confidence that my interests were always a priority.
+              Yes. Many legal disputes can be resolved through negotiation,
+              mediation, arbitration, or other forms of alternative dispute
+              resolution. Where appropriate, we work toward practical and
+              cost-effective solutions outside the courtroom while protecting
+              our clients&rsquo; rights and interests.
             </p>
+          </div>
 
-          </li>
-
-          <li class="review-card">
-
-            <h3>Ngozi Okonkwo</h3>
-
-            <span class="five-stars" aria-label="5 out of 5 stars">
-              <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
-            </span>
+          <div class="faq-item">
+            <h3>How long will it take to resolve my legal matter?</h3>
 
             <p>
-              I couldn't have asked for a better legal experience. I.J. Obijuru-Uzodinma, ESQ handled my matter with integrity, kept me informed throughout, and made sure I understood each stage of the process. Their professionalism and dedication exceeded my expectations, and I highly recommend their services
+              The timeline for resolving a legal matter can vary significantly
+              based on its complexity and the court's schedule. Simple cases
+              might be resolved within a few months, while more complex matters
+              could take several years. During your initial consultation, we can
+              provide a more accurate estimate based on the specifics of your
+              case.
             </p>
-
-          </li>
-
-        </ul>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <button type="button" class="review-nav review-nav-next" aria-label="Next review">
-        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
-      </button>
+    <!-- REVIEWS -->
+    <section class="reviews">
+      <div class="reviews-container">
+        <p class="reviews-eyebrow">Some Of Our Past Clients</p>
 
-    </div>
+        <h2 class="reviews-heading">What Our Clients Are Saying</h2>
 
-    <div class="reviews-dots" id="reviewsDots" aria-hidden="true"></div>
+        <div class="reviews-carousel">
+          <button
+            type="button"
+            class="review-nav review-nav-prev"
+            aria-label="Previous review"
+          >
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+          </button>
 
-  </div>
-</section>
+          <div class="reviews-viewport">
+            <ul class="reviews-grid" id="reviewsGrid">
+              <li class="review-card">
+                <h3>Nwoke Nnamdi</h3>
 
-<!-- TRAFFIC MAP -->
-<section class="traffic-map">
+                <span class="five-stars" aria-label="5 out of 5 stars">
+                  <i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i>
+                </span>
 
-  <div class="traffic-map-container">
+                <p>
+                  I.J. Obijuru-Uzodinma, ESQ provided clear legal guidance
+                  throughout the process and kept me informed every step of the
+                  way. I always felt that my concerns were heard and that my
+                  matter received the attention it deserved. I&rsquo;m grateful
+                  for the professionalism, dedication, and support I received.
+                </p>
+              </li>
 
-    <p class="traffic-map-eyebrow">Enugu NAVMAP</p>
+              <li class="review-card">
+                <h3>Chukwudi Stephen</h3>
 
-    <h2 class="traffic-map-heading">Real-Time Local Traffic Conditions</h2>
+                <span class="five-stars" aria-label="5 out of 5 stars">
+                  <i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i>
+                </span>
 
-    <iframe
-      class="traffic-map-embed"
-      title="Live traffic map centered on Enugu State, Nigeria"
-      width="100%"
-      height="700"
-      allowfullscreen
-      allow="autoplay; encrypted-media; gyroscope;"
-      src="https://www.openstreetmap.org/export/embed.html?bbox=7.45%2C6.40%2C7.58%2C6.50&layer=mapnik&marker=6.4497%2C7.5137"
-      loading="lazy"
-    ></iframe>
-    
-  </div>
-</section>
+                <p>
+                  Working with I.J. Obijuru-Uzodinma, ESQ was a reassuring
+                  experience. Every stage of the process was handled with
+                  clarity and professionalism, and I was consistently updated on
+                  the progress of my case. Their commitment, responsiveness, and
+                  attention to detail gave me confidence that my interests were
+                  always a priority.
+                </p>
+              </li>
 
-<!-- OFFICE -->
-<section class="office">
+              <li class="review-card">
+                <h3>Ngozi Okonkwo</h3>
 
-  <div class="office-container">
+                <span class="five-stars" aria-label="5 out of 5 stars">
+                  <i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i>
+                </span>
 
-    <h2 class="office-heading">Visit Our Office</h2>
+                <p>
+                  I couldn't have asked for a better legal experience. I.J.
+                  Obijuru-Uzodinma, ESQ handled my matter with integrity, kept
+                  me informed throughout, and made sure I understood each stage
+                  of the process. Their professionalism and dedication exceeded
+                  my expectations, and I highly recommend their services
+                </p>
+              </li>
+            </ul>
+          </div>
 
-    <div class="office-subtext">
-      <p>Over 8 Years of Collective Experience Helping People in Nigeria</p>
-    </div>
+          <button
+            type="button"
+            class="review-nav review-nav-next"
+            aria-label="Next review"
+          >
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          </button>
+        </div>
 
-    <hr class="office-divider">
-
-    <div class="office-card">
-
-      <h3>Lawyer & Law Firm</h3>
-
-      <p>
-        <strong>I. J. Obijuru Uzodinma Esq</strong><br>
-        32 Nanka Street New Haven Enugu State, Nigeria
-      </p>
-
-      <p><strong>Phone:</strong> 
-        <a href="tel:+234 816 552 5271" title="Call Our Office Today">(234) 816 552 5271</a>
-      </p>
-
-      <p><a href="https://maps.app.goo.gl/PUTKRiGvu5Asz2B57" target="_blank" rel="noopener noreferrer" class="office-directions">Map &amp; Directions</a></p>
-
-      <p><strong>Hours:</strong><br>Mon &ndash; Sat: 8AM &ndash; 5PM<br> Sun: Closed</p> <br>
-
-      <p class="office-nb">
-        Nb: Appointment only  
-      </p>
-
-      <iframe
-        class="office-map"
-        title="Map to I.J. Obijuru-Uzodinma ESQ office"
-        width="100%"
-        height="180"
-        allowfullscreen
-        allow="autoplay; encrypted-media; gyroscope;"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.5053224980893!2d7.5195856999999995!3d6.4574751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1044a3f4a1e5dc07%3A0x2147d12499ffab04!2s32-A%20Nanka%20St%2C%20New%20Haven%2C%20Enugu%20400001%2C%20Enugu!5e0!3m2!1sen!2sng!4v1783606321264!5m2!1sen!2sng"
-        loading="lazy"
-      ></iframe>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="site-footer">
-
-  <div class="site-footer-container">
-
-    <div class="footer-top-row">
-
-      <div class="footer-logo">
-        <img src="" alt="I.J. Obijuru-Uzodinma ESQ Logo" width="170" height="83">
+        <div class="reviews-dots" id="reviewsDots" aria-hidden="true"></div>
       </div>
+    </section>
 
-      <nav class="footer-nav" aria-label="Footer">
+    <!-- TRAFFIC MAP -->
+    <section class="traffic-map">
+      <div class="traffic-map-container">
+        <p class="traffic-map-eyebrow">Enugu NAVMAP</p>
 
-        <ul>
-          <li><a href="./html files/about.html">About</a></li>
+        <h2 class="traffic-map-heading">Real-Time Local Traffic Conditions</h2>
 
-          <li><a href="">Legal Services</a></li>
+        <iframe
+          class="traffic-map-embed"
+          title="Live traffic map centered on Enugu State, Nigeria"
+          width="100%"
+          height="700"
+          allowfullscreen
+          allow="autoplay; encrypted-media; gyroscope"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=7.45%2C6.40%2C7.58%2C6.50&layer=mapnik&marker=6.4497%2C7.5137"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
 
-          <li><a href="#">Contact</a></li>
+    <!-- OFFICE -->
+    <section class="office">
+      <div class="office-container">
+        <h2 class="office-heading">Visit Our Office</h2>
 
-          <li><a href="#">Disclaimer</a></li>
+        <div class="office-subtext">
+          <p>Over 8 Years of Collective Experience Helping People in Nigeria</p>
+        </div>
 
-          <li><a href="#">Privacy Policy</a></li>
-        </ul>
+        <hr class="office-divider" />
 
-      </nav>
+        <div class="office-card">
+          <h3>Lawyer & Law Firm</h3>
 
-    </div>
+          <p>
+            <strong>I. J. Obijuru Uzodinma Esq</strong><br />
+            32 Nanka Street New Haven Enugu State, Nigeria
+          </p>
 
-    <div class="footer-bottom-row">
+          <p>
+            <strong>Phone:</strong>
+            <a href="tel:+234 816 552 5271" title="Call Our Office Today"
+              >(234) 816 552 5271</a
+            >
+          </p>
 
-      <p class="footer-copyright">
-        &copy; 2026 I.J. Obijuru-Uzodinma ESQ |
-      </p>
+          <p>
+            <a
+              href="https://maps.app.goo.gl/PUTKRiGvu5Asz2B57"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="office-directions"
+              >Map &amp; Directions</a
+            >
+          </p>
 
-      <ul class="footer-socials">
+          <p>
+            <strong>Hours:</strong><br />Mon &ndash; Sat: 8AM &ndash; 5PM<br />
+            Sun: Closed
+          </p>
+          <br />
 
-        <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+          <p class="office-nb">Nb: Appointment only</p>
 
-        <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+          <iframe
+            class="office-map"
+            title="Map to I.J. Obijuru-Uzodinma ESQ office"
+            width="100%"
+            height="180"
+            allowfullscreen
+            allow="autoplay; encrypted-media; gyroscope"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.5053224980893!2d7.5195856999999995!3d6.4574751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1044a3f4a1e5dc07%3A0x2147d12499ffab04!2s32-A%20Nanka%20St%2C%20New%20Haven%2C%20Enugu%20400001%2C%20Enugu!5e0!3m2!1sen!2sng!4v1783606321264!5m2!1sen!2sng"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
 
-        <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="site-footer-container">
+        <div class="footer-top-row">
+          <div class="footer-logo">
+            <img
+              src=""
+              alt="I.J. Obijuru-Uzodinma ESQ Logo"
+              width="170"
+              height="83"
+            />
+          </div>
 
-        <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+          <nav class="footer-nav" aria-label="Footer">
+            <ul>
+              <li><a href="./html files/about.html">About</a></li>
 
-        <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Yelp"><i class="fa-brands fa-yelp" aria-hidden="true"></i></a></li>
+              <li><a href="#ddLegalServices">Legal Services</a></li>
 
-      </ul>
+              <li><a href="#">Contact</a></li>
 
-    </div>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </nav>
+        </div>
 
-  </div>
-</footer>
+        <div class="footer-bottom-row">
+          <p class="footer-copyright">
+            &copy; 2026 I.J. Obijuru-Uzodinma ESQ |
+          </p>
 
-<script src="./Js files/script.js" class="js"></script>
-</body>
+          <ul class="footer-socials">
+            <li>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f" aria-hidden="true"></i
+              ></a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                ><i class="fa-brands fa-youtube" aria-hidden="true"></i
+              ></a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+                ><i class="fa-brands fa-twitter" aria-hidden="true"></i
+              ></a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i
+              ></a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Yelp"
+                ><i class="fa-brands fa-yelp" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./Js files/script.js" class="js"></script>
+  </body>
 </html>

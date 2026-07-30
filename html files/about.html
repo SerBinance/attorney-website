@@ -1,518 +1,609 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Barr Jane</title>
-  <link rel="stylesheet" href="../Css files/about.css" class="css">
-  <script src="https://kit.fontawesome.com/9f29008fe7.js" crossorigin="anonymous"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barr Jane</title>
+    <link rel="stylesheet" href="../Css files/about.css" class="css" />
+    <script
+      src="https://kit.fontawesome.com/9f29008fe7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header class="site-header" id="masthead">
+      <div class="header-main" id="headerMain">
+        <nav class="navbar" aria-label="Primary navigation">
+          <div class="navbar-row">
+            <!-- Logo -->
+            <div class="navbar-brand-col">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="../images/logo-1.jpg"
+                  alt="I J Obijuru-Uzodinma Esq"
+                  width="170"
+                  height="83"
+                  class="firm-logo"
+                />
+              </a>
+            </div>
 
-<!-- NAVIGATION -->
-<header class="site-header" id="masthead">
-  
-
-  <div class="header-main" id="headerMain">
-    <nav class="navbar" aria-label="Primary navigation">
-      <div class="navbar-row">
-        
-        <!-- Logo -->
-        <div class="navbar-brand-col">
-          <a class="navbar-brand" href="#">
-            <img
-              src="../images/logo-1.jpg"
-              alt="I J Obijuru-Uzodinma Esq"
-              width="170"
-              height="83"
-              class="firm-logo"
+            <!-- Mobile hamburger toggle -->
+            <button
+              type="button"
+              class="navbar-toggler"
+              id="navToggler"
+              aria-expanded="false"
+              aria-controls="navbarCollapse"
+              aria-label="Toggle navigation menu"
             >
-          </a>
-        </div>
+              <span class="navbar-toggler-icon" aria-hidden="true">
+                <span class="bar bar-top"></span>
+                <span class="bar bar-mid"></span>
+                <span class="bar bar-bottom"></span>
+              </span>
+            </button>
 
-        <!-- Mobile hamburger toggle -->
-        <button
-          type="button"
-          class="navbar-toggler"
-          id="navToggler"
-          aria-expanded="false"
-          aria-controls="navbarCollapse"
-          aria-label="Toggle navigation menu"
-        >
-          <span class="navbar-toggler-icon" aria-hidden="true">
-            <span class="bar bar-top"></span>
-            <span class="bar bar-mid"></span>
-            <span class="bar bar-bottom"></span>
-          </span>
-        </button>
+            <!-- Menu column: top utility bar + main nav -->
 
-        <!-- Menu column: top utility bar + main nav -->
+            <div class="navbar-menu-col">
+              <div class="navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav" id="menuMain">
+                  <li class="nav-item has-dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle"
+                      aria-expanded="false"
+                      aria-controls="ddLegalServices"
+                      >Legal Services
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
 
-        <div class="navbar-menu-col">
-          <div class="navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav" id="menuMain">
-              <li class="nav-item has-dropdown">
-                <a href="#" class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="ddLegalServices">Legal Services
-                  <i class="fa-solid fa-chevron-down"></i>
-                </a>
+                    <ul class="dropdown-menu" id="ddLegalServices">
+                      <li>
+                        <a href="" class="dropdown-item" aria-current="page"
+                          >Civil Legation</a
+                        >
+                      </li>
 
-                               
-                <ul class="dropdown-menu" id="ddLegalServices">
+                      <li>
+                        <a href="" class="dropdown-item"
+                          >Corporate & Commercial Law</a
+                        >
+                      </li>
 
-                  <li>
-                    <a href="" class="dropdown-item" aria-current="page">Civil Legation</a>
+                      <li>
+                        <a href="" class="dropdown-item"
+                          >Property & Real Estate</a
+                        >
+                      </li>
+
+                      <li>
+                        <a href="" class="dropdown-item">Family Law</a>
+                      </li>
+
+                      <li>
+                        <a href="" class="dropdown-item">Contract Drafting</a>
+                      </li>
+
+                      <li>
+                        <a href="" class="dropdown-item">Legal Advisory</a>
+                      </li>
+                    </ul>
                   </li>
 
-                  <li>
-                    <a href="" class="dropdown-item">Corporate & Commercial Law</a>
+                  <li class="nav-item has-dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle"
+                      aria-expanded="false"
+                      aria-controls="ddLocations"
+                      >Location
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu" id="ddLocations">
+                      <li><a href="" class="dropdown-item">Enugu State</a></li>
+                    </ul>
                   </li>
 
-                  <li>
-                    <a href="" class="dropdown-item">Property & Real Estate</a>
+                  <li class="nav-item has-dropdown">
+                    <a
+                      href="about.html"
+                      class="nav-link dropdown-toggle"
+                      aria-expanded="false"
+                      aria-controls="ddAbout"
+                      >About
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu" id="ddAbout">
+                      <li>
+                        <a
+                          href="about.html"
+                          class="dropdown-item"
+                          rel="nofollow"
+                          target="_blank"
+                          >I.J. Obijuru-Uzodinma</a
+                        >
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item" rel="nofollow"
+                          >Reviews</a
+                        >
+                      </li>
+                    </ul>
                   </li>
 
-                  <li>
-                    <a href="" class="dropdown-item">Family Law</a>
+                  <li class="nav-item">
+                    <a href="" class="nav-link" rel="nofollow">Contact</a>
                   </li>
-
-                  <li>
-                    <a href="" class="dropdown-item">Contract Drafting</a>
-                  </li>
-
-                  <li>
-                    <a href="" class="dropdown-item">Legal Advisory</a>
-                  </li>
-
                 </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Spacer that mirrors the fixed nav's height so page content isn't hidden underneath it -->
+      <div class="header-spacer" id="headerSpacer" aria-hidden="true"></div>
+    </header>
 
-              </li>
+    <!-- SECTION-HERO -->
+    <section class="hero" aria-label="Introduction">
+      <div class="container">
+        <div class="contact-card">
+          <h1>JANE IJEOMA OBIJURU-UZODINMA</h1>
 
-              <li class="nav-item has-dropdown">
-                <a href="#" class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="ddLocations">Location
-                  <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                
-                <ul class="dropdown-menu" id="ddLocations">
-                  <li><a href="" class="dropdown-item">Enugu State</a></li>
-                </ul>
-              </li>
+          <h3>CONNECT WITH ME</h3>
 
-              <li class="nav-item has-dropdown">
-                <a href="about.html" class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="ddAbout">About
-                  <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                
-                <ul class="dropdown-menu" id="ddAbout">
-                  <li><a href="about.html" class="dropdown-item" rel="nofollow" target="_blank">I.J. Obijuru-Uzodinma</a></li>
-                  <li><a href="" class="dropdown-item" rel="nofollow">Reviews</a></li>
-                </ul>
-              </li>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
 
-              <li class="nav-item">
-                <a href="" class="nav-link" rel="nofollow">Contact</a>
-              </li>
-            </ul>
-            
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+
+              <span>janeijeoma23@gmail.com</span>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+
+              <span>(234) 816 552 5271</span>
+            </div>
+
+            <div class="contact-item address">
+              <i class="fa-solid fa-location-dot"></i>
+
+              <span>
+                32 Nanka Street, New Haven<br />
+                Enugu State, Nigeria
+              </span>
+            </div>
           </div>
         </div>
+
+        <div class="hero-img-guy">
+          <img
+            src="../images/barr-jane-main-1.png"
+            alt="Barr Jane"
+            class="hero-img"
+            loading="lazy"
+          />
+        </div>
       </div>
-    </nav>
-  </div>
-  <!-- Spacer that mirrors the fixed nav's height so page content isn't hidden underneath it -->
-  <div class="header-spacer" id="headerSpacer" aria-hidden="true"></div>
-</header>
+    </section>
 
+    <!-- BEFORE INTRO -->
 
-
-
-<!-- SECTION-HERO -->
-<section class="hero" aria-label="Introduction">
-
-  <div class="container">
-
-    <div class="contact-card">
-
-      <h1>JANE IJEOMA OBIJURU-UZODINMA</h1>
-
-      <h3>CONNECT WITH ME</h3>
-
-      <div class="social-icons">
-
-        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-
-
+    <section class="before-intro">
+      <div>
+        <h2>I.J. Obijuru-Uzodinma</h2>
       </div>
 
-      <div class="contact-info">
-
-        <div class="contact-item">
-
-          <i class="fa-solid fa-envelope"></i>
-
-          <span>janeijeoma23@gmail.com</span>
-
-        </div>
-
-        <div class="contact-item">
-
-          <i class="fa-solid fa-phone"></i>
-
-          <span>(234) 816 552 5271</span>
-
-        </div>
-
-        <div class="contact-item address">
-
-          <i class="fa-solid fa-location-dot"></i>
-
-          <span>
-            32 Nanka Street, New Haven<br>
-            Enugu State, Nigeria
-          </span>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="hero-img-guy">
-
-      <img
-        src="../images/barr-jane-main-1.png"
-        alt="Barr Jane"
-        class="hero-img"
-        loading="lazy"
-      >
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- BEFORE INTRO -->
-
-<section class="before-intro">
-
-    <div>
-        <h2>
-            I.J. Obijuru-Uzodinma
-        </h2>
-    </div>
-
-    <div>
+      <div>
         <p>
-            She is a solicitor and advocate of the Supreme Court of Nigeria with over seven years of experience providing trusted legal services. She advises individuals, businesses, and property owners on matters relating to property, criminal, corporate, and civil law. Based in Enugu, she is known for her professionalism, practical legal solutions, and commitment to achieving the best outcomes for her clients.
+          She is a solicitor and advocate of the Supreme Court of Nigeria with
+          over seven years of experience providing trusted legal services. She
+          advises individuals, businesses, and property owners on matters
+          relating to property, criminal, corporate, and civil law. Based in
+          Enugu, she is known for her professionalism, practical legal
+          solutions, and commitment to achieving the best outcomes for her
+          clients.
         </p>
-    </div>
-</section>
+      </div>
+    </section>
 
+    <!-- INTRO -->
 
-<!-- INTRO -->
+    <section class="about-intro">
+      <div class="about-intro-container">
+        <div class="about-intro-text">
+          <h2>Background and Education</h2>
 
-<section class="about-intro">
-  <div class="about-intro-container">
-    <div class="about-intro-text">
+          <p>
+            Jane Ijeoma Obijuru-Uzodinma, Esq. was born in Owalla Uratta, Owerri
+            North Local Government Area of Imo State, Nigeria. Her passion for
+            justice and advocacy developed from an early age and inspired her to
+            pursue a career in law. Today, she has built a reputation as a
+            dedicated legal practitioner who combines knowledge, integrity, and
+            practical experience to serve clients across different areas of law.
+          </p>
 
-      <h2>Background and Education</h2>
+          <p>
+            She began her educational journey at Police Children School, Enugu,
+            where she obtained her primary education. She later attended Federal
+            Government Girls College, Ezzamgbo, Ebonyi State, where she
+            completed her secondary education after six years of study. Her
+            academic foundation prepared her for a successful transition into
+            legal education.
+          </p>
 
-      <p>
-        Jane Ijeoma Obijuru-Uzodinma, Esq. was born in Owalla Uratta, Owerri North Local Government Area of Imo State, Nigeria. Her passion for justice and advocacy developed from an early age and inspired her to pursue a career in law. Today, she has built a reputation as a dedicated legal practitioner who combines knowledge, integrity, and practical experience to serve clients across different areas of law.
-      </p>
+          <p>
+            Jane earned her Bachelor of Laws (LL.B.) degree from Enugu State
+            University of Science and Technology (ESUT) between 2010 and 2016.
+            She proceeded to the Nigerian Law School, Bayelsa Campus, where she
+            completed her professional legal training before being called to the
+            Nigerian Bar. Her education, combined with years of legal practice,
+            has equipped her with the skills to provide reliable legal
+            representation in property, criminal, corporate, and civil law
+            matters.
+          </p>
+        </div>
+      </div>
+    </section>
 
-      <p>
-        She began her educational journey at Police Children School, Enugu, where she obtained her primary education. She later attended Federal Government Girls College, Ezzamgbo, Ebonyi State, where she completed her secondary education after six years of study. Her academic foundation prepared her for a successful transition into legal education.
-      </p>
+    <!-- SECOND INTRO -->
 
-      <p>
-        Jane earned her Bachelor of Laws (LL.B.) degree from Enugu State University of Science and Technology (ESUT) between 2010 and 2016. She proceeded to the Nigerian Law School, Bayelsa Campus, where she completed her professional legal training before being called to the Nigerian Bar. Her education, combined with years of legal practice, has equipped her with the skills to provide reliable legal representation in property, criminal, corporate, and civil law matters.
-      </p>
+    <section class="intro-pledge">
+      <div class="intro-pledge-container">
+        <div class="intro-pledge-text">
+          <h2>How Jane Practices Law</h2>
 
-    </div>
+          <p>
+            For Jane, practicing law is about more than interpreting legal
+            rules, it's about helping people find solutions to real-life
+            challenges. She approaches every matter with careful attention,
+            professionalism, and a commitment to protecting her clients' rights
+            and interests. Whether handling a property transaction, resolving a
+            dispute, or providing legal advice, she focuses on delivering
+            practical and effective results.
+          </p>
 
-    
+          <p>
+            One of the greatest motivations behind her work is the satisfaction
+            of her clients. She believes that every successful outcome
+            strengthens the trust between a lawyer and the people they serve.
+            Seeing clients leave with confidence and peace of mind is what
+            continues to inspire her dedication to the legal profession
+          </p>
 
-  </div>
-</section>
+          <p>
+            Over the years, Jane has handled matters involving property law,
+            criminal law, corporate law, civil litigation, legal drafting,
+            contract review, and real estate transactions. She takes the time to
+            understand each client's unique situation before developing a clear
+            legal strategy tailored to their needs. Her goal is to provide
+            dependable legal representation built on integrity, knowledge, and a
+            genuine commitment to justice.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<!-- SECOND INTRO -->
-
-<section class="intro-pledge">
-
-  <div class="intro-pledge-container">
-
-    <div class="intro-pledge-text">
-
-      <h2>How Jane Practices Law</h2>
-
-      <p>
-        For Jane, practicing law is about more than interpreting legal rules, it's about helping people find solutions to real-life challenges. She approaches every matter with careful attention, professionalism, and a commitment to protecting her clients' rights and interests. Whether handling a property transaction, resolving a dispute, or providing legal advice, she focuses on delivering practical and effective results.
-      </p>
-
-      <p>
-        One of the greatest motivations behind her work is the satisfaction of her clients. She believes that every successful outcome strengthens the trust between a lawyer and the people they serve. Seeing clients leave with confidence and peace of mind is what continues to inspire her dedication to the legal profession
-      </p>
-
-      
-      <p>
-        Over the years, Jane has handled matters involving property law, criminal law, corporate law, civil litigation, legal drafting, contract review, and real estate transactions. She takes the time to understand each client's unique situation before developing a clear legal strategy tailored to their needs. Her goal is to provide dependable legal representation built on integrity, knowledge, and a genuine commitment to justice.
-
-
-      </p>
-
-    </div>
-
-    
-  </div>
-</section>
-
-<section class="awards-memberships">
-
-    <div class="section-block">
+    <section class="awards-memberships">
+      <div class="section-block">
         <h2>Awards and Recognition</h2>
 
         <ul>
-            <li><strong>Law Firm of the Year Award</strong> </li>
+          <li><strong>Law Firm of the Year Award</strong></li>
 
-            <li><strong>ESQ 40 Under 40 Award</strong> </li>
+          <li><strong>ESQ 40 Under 40 Award</strong></li>
 
-            <li><strong>Justice of the Peace(JP)</strong> </li>
+          <li><strong>Justice of the Peace(JP)</strong></li>
 
-            <li><strong>LAWSAN Merit Award</strong></li>
+          <li><strong>LAWSAN Merit Award</strong></li>
 
-            <li><strong>Nigeria Bar Association(NBA) Branch Award</strong></li>
+          <li><strong>Nigeria Bar Association(NBA) Branch Award</strong></li>
         </ul>
-    </div>
+      </div>
 
-    <div class="section-block">
+      <div class="section-block">
         <h2>Professional Memberships</h2>
 
         <ul class="membership-list">
-            <li><strong>Nigeria Bar Association(NBA)</strong></li>
-            <li><strong>Enugu State Bar Association</strong></li>
-            <li><strong>Imo Lawyers </strong></li>
-            <li><strong>Women Lawyers Association of Nigeria</strong></li>
-            <li><strong>Christian Lawyers Fellowship of Nigeria</strong></li>
-            
-        </ul>
-    </div>
-
-</section>
-
-
-
-
-<!-- REVIEWS -->
-<section class="reviews">
-  <div class="reviews-container">
-
-    <p class="reviews-eyebrow">Some Of Our Past Clients</p>
-
-    <h2 class="reviews-heading">What Our Clients Are Saying</h2>
-
-    <div class="reviews-carousel">
-
-      <button type="button" class="review-nav review-nav-prev" aria-label="Previous review">
-        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
-      </button>
-
-      <div class="reviews-viewport">
-        <ul class="reviews-grid" id="reviewsGrid">
-
-          <li class="review-card">
-
-            <h3>Nwoke Nnamdi</h3>
-
-            <span class="five-stars" aria-label="5 out of 5 stars">
-              <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
-            </span>
-
-            <p>
-              I.J. Obijuru-Uzodinma, ESQ provided clear legal guidance throughout the process and kept me informed every step of the way. I always felt that my concerns were heard and that my matter received the attention it deserved. I&rsquo;m grateful for the professionalism, dedication, and support I received.
-            </p>
-
-          </li>
-
-          <li class="review-card">
-
-            <h3>Nwoke Nnamdi</h3>
-
-            <span class="five-stars" aria-label="5 out of 5 stars">
-              <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
-            </span>
-
-            <p>
-              I.J. Obijuru-Uzodinma, ESQ provided clear legal guidance throughout the process and kept me informed every step of the way. I always felt that my concerns were heard and that my matter received the attention it deserved. I&rsquo;m grateful for the professionalism, dedication, and support I received.
-            </p>
-
-          </li>
-
-          <li class="review-card">
-
-            <h3>Nwoke Nnamdi</h3>
-
-            <span class="five-stars" aria-label="5 out of 5 stars">
-              <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
-            </span>
-
-            <p>
-              I.J. Obijuru-Uzodinma, ESQ provided clear legal guidance throughout the process and kept me informed every step of the way. I always felt that my concerns were heard and that my matter received the attention it deserved. I&rsquo;m grateful for the professionalism, dedication, and support I received.
-            </p>
-
-          </li>
-
+          <li><strong>Nigeria Bar Association(NBA)</strong></li>
+          <li><strong>Enugu State Bar Association</strong></li>
+          <li><strong>Imo Lawyers </strong></li>
+          <li><strong>Women Lawyers Association of Nigeria</strong></li>
+          <li><strong>Christian Lawyers Fellowship of Nigeria</strong></li>
         </ul>
       </div>
+    </section>
 
-      <button type="button" class="review-nav review-nav-next" aria-label="Next review">
-        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
-      </button>
+    <!-- REVIEWS -->
+    <section class="reviews">
+      <div class="reviews-container">
+        <p class="reviews-eyebrow">Some Of Our Past Clients</p>
 
-    </div>
+        <h2 class="reviews-heading">What Our Clients Are Saying</h2>
 
-    <div class="reviews-dots" id="reviewsDots" aria-hidden="true"></div>
+        <div class="reviews-carousel">
+          <button
+            type="button"
+            class="review-nav review-nav-prev"
+            aria-label="Previous review"
+          >
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+          </button>
 
-  </div>
-</section>
+          <div class="reviews-viewport">
+            <ul class="reviews-grid" id="reviewsGrid">
+              <li class="review-card">
+                <h3>Nwoke Nnamdi</h3>
 
-<!-- BADGES -->
+                <span class="five-stars" aria-label="5 out of 5 stars">
+                  <i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i>
+                </span>
 
-<section class="badges" aria-label="Memberships and recognitions">
+                <p>
+                  I.J. Obijuru-Uzodinma, ESQ provided clear legal guidance
+                  throughout the process and kept me informed every step of the
+                  way. I always felt that my concerns were heard and that my
+                  matter received the attention it deserved. I&rsquo;m grateful
+                  for the professionalism, dedication, and support I received.
+                </p>
+              </li>
 
-  <div class="badges-container">
+              <li class="review-card">
+                <h3>Nwoke Nnamdi</h3>
 
-    <p class="badges-heading">Memberships &amp; Recognitions</p>
+                <span class="five-stars" aria-label="5 out of 5 stars">
+                  <i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i>
+                </span>
 
-    <ul class="badges-list">
+                <p>
+                  I.J. Obijuru-Uzodinma, ESQ provided clear legal guidance
+                  throughout the process and kept me informed every step of the
+                  way. I always felt that my concerns were heard and that my
+                  matter received the attention it deserved. I&rsquo;m grateful
+                  for the professionalism, dedication, and support I received.
+                </p>
+              </li>
 
-      <li class="badge-item">
-        <img src="../images/top_100_verdict-1-2.png" alt="Law Firm" width="156" height="146" loading="lazy">
-      </li>
+              <li class="review-card">
+                <h3>Nwoke Nnamdi</h3>
 
-      <li class="badge-item">
-        <img src="../images/Image-36-1.png" alt="Super Lawyers" width="129" height="90" loading="lazy">
-      </li>
+                <span class="five-stars" aria-label="5 out of 5 stars">
+                  <i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i
+                  ><i class="fas fa-star" aria-hidden="true"></i>
+                </span>
 
-      <li class="badge-item">
-        <img src="../images/logo-01-2.png" alt="Multi-Million Dollar Advocates Forum" width="92" height="92" loading="lazy">
-      </li>
+                <p>
+                  I.J. Obijuru-Uzodinma, ESQ provided clear legal guidance
+                  throughout the process and kept me informed every step of the
+                  way. I always felt that my concerns were heard and that my
+                  matter received the attention it deserved. I&rsquo;m grateful
+                  for the professionalism, dedication, and support I received.
+                </p>
+              </li>
+            </ul>
+          </div>
 
-      
-      
-    </ul>
-  </div>
+          <button
+            type="button"
+            class="review-nav review-nav-next"
+            aria-label="Next review"
+          >
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          </button>
+        </div>
 
-</section>
-
-
-
-<!-- OFFICE -->
-<section class="office">
-
-  <div class="office-container">
-
-    <h2 class="office-heading">Visit Our Office</h2>
-
-    <div class="office-subtext">
-      <p>Over 8 Years of Collective Experience Helping People in Nigeria</p>
-    </div>
-
-    <hr class="office-divider">
-
-    <div class="office-card">
-
-      <h3>Lawyer & Law Firm</h3>
-
-      <p>
-        <strong>I. J. Obijuru Uzodinma Esq</strong><br>
-        32 Nanka Street New Haven Enugu State, Nigeria
-      </p>
-
-      <p><strong>Phone:</strong> 
-        <a href="tel:+234 816 552 5271" title="Call Our Office Today">(234) 816 552 5271</a>
-      </p>
-
-      <p><a href="https://maps.app.goo.gl/PUTKRiGvu5Asz2B57" target="_blank" rel="noopener noreferrer" class="office-directions">Map &amp; Directions</a></p>
-
-      <p><strong>Hours:</strong><br>Mon &ndash; Sat: 8AM &ndash; 5PM<br> Sun: Closed</p> <br>
-
-      <p class="office-nb">
-        Nb: Appointment only  
-      </p>
-
-      <iframe
-        class="office-map"
-        title="Map to I.J. Obijuru-Uzodinma ESQ office"
-        width="100%"
-        height="180"
-        allowfullscreen
-        allow="autoplay; encrypted-media; gyroscope;"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.5053224980893!2d7.5195856999999995!3d6.4574751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1044a3f4a1e5dc07%3A0x2147d12499ffab04!2s32-A%20Nanka%20St%2C%20New%20Haven%2C%20Enugu%20400001%2C%20Enugu!5e0!3m2!1sen!2sng!4v1783606321264!5m2!1sen!2sng"
-        loading="lazy"
-      ></iframe>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="site-footer">
-
-  <div class="site-footer-container">
-
-    <div class="footer-top-row">
-
-      <div class="footer-logo">
-        <img src="" alt="I.J. Obijuru-Uzodinma ESQ Logo" width="170" height="83">
+        <div class="reviews-dots" id="reviewsDots" aria-hidden="true"></div>
       </div>
+    </section>
 
-      <nav class="footer-nav" aria-label="Footer">
+    <!-- BADGES -->
 
-        <ul>
-          <li><a href="#">About</a></li>
+    <section class="badges" aria-label="Memberships and recognitions">
+      <div class="badges-container">
+        <p class="badges-heading">Memberships &amp; Recognitions</p>
 
-          <li><a href="vices/">Legal Services</a></li>
+        <ul class="badges-list">
+          <li class="badge-item">
+            <img
+              src="../images/top_100_verdict-1-2.png"
+              alt="Law Firm"
+              width="156"
+              height="146"
+              loading="lazy"
+            />
+          </li>
 
-          <li><a href="#">Contact</a></li>
+          <li class="badge-item">
+            <img
+              src="../images/Image-36-1.png"
+              alt="Super Lawyers"
+              width="129"
+              height="90"
+              loading="lazy"
+            />
+          </li>
 
-          <li><a href="#">Disclaimer</a></li>
-
-          <li><a href="#">Privacy Policy</a></li>
+          <li class="badge-item">
+            <img
+              src="../images/logo-01-2.png"
+              alt="Multi-Million Dollar Advocates Forum"
+              width="92"
+              height="92"
+              loading="lazy"
+            />
+          </li>
         </ul>
+      </div>
+    </section>
 
-      </nav>
+    <!-- OFFICE -->
+    <section class="office">
+      <div class="office-container">
+        <h2 class="office-heading">Visit Our Office</h2>
 
-    </div>
+        <div class="office-subtext">
+          <p>Over 8 Years of Collective Experience Helping People in Nigeria</p>
+        </div>
 
-    <div class="footer-bottom-row">
+        <hr class="office-divider" />
 
-      <p class="footer-copyright">
-        &copy; 2026 I.J. Obijuru-Uzodinma ESQ |
-      </p>
+        <div class="office-card">
+          <h3>Lawyer & Law Firm</h3>
 
-      <ul class="footer-socials">
+          <p>
+            <strong>I. J. Obijuru Uzodinma Esq</strong><br />
+            32 Nanka Street New Haven Enugu State, Nigeria
+          </p>
 
-        <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+          <p>
+            <strong>Phone:</strong>
+            <a href="tel:+234 816 552 5271" title="Call Our Office Today"
+              >(234) 816 552 5271</a
+            >
+          </p>
 
-        <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+          <p>
+            <a
+              href="https://maps.app.goo.gl/PUTKRiGvu5Asz2B57"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="office-directions"
+              >Map &amp; Directions</a
+            >
+          </p>
 
-        <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+          <p>
+            <strong>Hours:</strong><br />Mon &ndash; Sat: 8AM &ndash; 5PM<br />
+            Sun: Closed
+          </p>
+          <br />
 
-        <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+          <p class="office-nb">Nb: Appointment only</p>
 
-        <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Yelp"><i class="fa-brands fa-yelp" aria-hidden="true"></i></a></li>
+          <iframe
+            class="office-map"
+            title="Map to I.J. Obijuru-Uzodinma ESQ office"
+            width="100%"
+            height="180"
+            allowfullscreen
+            allow="autoplay; encrypted-media; gyroscope"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.5053224980893!2d7.5195856999999995!3d6.4574751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1044a3f4a1e5dc07%3A0x2147d12499ffab04!2s32-A%20Nanka%20St%2C%20New%20Haven%2C%20Enugu%20400001%2C%20Enugu!5e0!3m2!1sen!2sng!4v1783606321264!5m2!1sen!2sng"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
 
-      </ul>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="site-footer-container">
+        <div class="footer-top-row">
+          <div class="footer-logo">
+            <img
+              src=""
+              alt="I.J. Obijuru-Uzodinma ESQ Logo"
+              width="170"
+              height="83"
+            />
+          </div>
 
-    </div>
+          <nav class="footer-nav" aria-label="Footer">
+            <ul>
+              <li><a href="#">About</a></li>
 
-  </div>
-</footer>
+              <li><a href="vices/">Legal Services</a></li>
 
-<script src="../Js files/script.js" class="js"></script>
-</body>
+              <li><a href="#">Contact</a></li>
+
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer-bottom-row">
+          <p class="footer-copyright">
+            &copy; 2026 I.J. Obijuru-Uzodinma ESQ |
+          </p>
+
+          <ul class="footer-socials">
+            <li>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f" aria-hidden="true"></i
+              ></a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                ><i class="fa-brands fa-youtube" aria-hidden="true"></i
+              ></a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+                ><i class="fa-brands fa-twitter" aria-hidden="true"></i
+              ></a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i
+              ></a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Yelp"
+                ><i class="fa-brands fa-yelp" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../Js files/script.js" class="js"></script>
+  </body>
 </html>
