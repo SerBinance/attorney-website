@@ -51,11 +51,20 @@
               <div class="navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav" id="menuMain">
 
-                    <li class="nav-item nav-item-home">
-                        <a href="../index.html" class="nav-link" rel="nofollow">Home
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </a>
-                    </li>
+                    <li class="nav-item has-dropdown nav-item-home">
+                    <a
+                      href="../index.html"
+                      class="nav-link dropdown-toggle"
+                      aria-expanded="false"
+                      aria-controls="ddHome"
+                      >Home
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu" id="ddHome">
+                      
+                    </ul>
+                  </li>
 
                   <li class="nav-item has-dropdown">
                     <a
@@ -143,9 +152,7 @@
                     </ul>
                   </li>
 
-                  <!-- <li class="nav-item">
-                    <a href="" class="nav-link" rel="nofollow">Contact</a>
-                  </li> -->
+                  
                 </ul>
               </div>
             </div>
@@ -168,7 +175,7 @@
           </p>
 
           <form class="hero-contact-form" id="heroContactForm" novalidate>
-            <!-- Get your free access key at https://web3forms.com and paste it below -->
+            
             <input
               type="hidden"
               name="access_key"
