@@ -851,7 +851,7 @@ body {
     display: block;
   }
 
-  
+}  
 
 /* ---------- min-width: 992px ---------- */
 @media (min-width: 992px) {
@@ -970,7 +970,6 @@ body {
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
-    font-weight: bold;
     letter-spacing: -0.5px;
     font-family: var(--font-georgia);
   }

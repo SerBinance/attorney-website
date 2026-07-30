@@ -976,7 +976,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 20px;
+    
+    letter-spacing: -0.5px;
+    font-family: var(--font-georgia);
   }
+
 
   .dropdown-toggle[aria-expanded="true"] i {
     transform: rotate(180deg);
