@@ -1262,6 +1262,10 @@ body {
     display: block;
   }
 
+  .hero-img-guy{
+    display: none;
+  }
+
   /* 3. Badges: 33.333% base already gives 3-per-row at all sizes */
 }
 
@@ -1418,6 +1422,10 @@ body {
   /* 2. Hero */
   .hero-inner {
     max-width: 645px;
+  }
+
+  .hero-img-guy{
+    display: none;
   }
 
   .hero-headline {
