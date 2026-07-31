@@ -139,6 +139,10 @@ body {
   margin: 0 0 1rem;
 }
 
+.intro-text-02{
+  display: none;
+}
+
 /* Primary block buttons (Hero and PI Section) */
 .hero-cta,
 .pi-cta {
@@ -623,6 +627,11 @@ body {
   flex-direction: column;
   justify-content: center;
   padding-bottom: 0.25rem;
+}
+
+.approach-text-02{
+  display: none;
+  margin: 0px 0px 20px;
 }
 
 .approach-media img {
@@ -1434,6 +1443,10 @@ body {
     margin-top: 40px;
   } 
 
+  .pledge{
+    display: none;
+  }
+
   .footer-logo img {
     margin: -20px auto 15px;
   }
@@ -1451,6 +1464,33 @@ body {
     line-height: 50px;
   }
 
+  .approach-text-01{
+    display: none;
+  }
+
+  .approach-text-02{
+    display: block;
+  }
+
+  .intro-text-01{
+    display: none;
+  }
+
+  .intro-text-02{
+    display: block; 
+    margin: 40px auto;
+  }
+
+  .pi-checklist, .pi-right p{
+    display: none;
+  }
+
+  .pi-cta-wrap{
+    display: block !important;
+    margin-bottom: -30px !important;
+  }
+
+  
   /* 7, 9. Attorney Intro (PI Section), FAQ padding */
   .pi-section,
   .faq {
