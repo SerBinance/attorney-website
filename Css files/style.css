@@ -297,7 +297,8 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 170px;
   height: auto;
   position: relative;
-  top: 30px;
+  top: 20px;
+  
 }
 
 .navbar-toggler {
@@ -1420,18 +1421,12 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 900px) {
 
-  /* .attorney-card {
-    flex-direction: column;
-    text-align: center;
-    padding: 35px;
-    gap: 35px;
-  } */
-
+  
   .attorney-card {
     flex-direction: column;
     text-align: center;
-    padding: 22px 16px;   /* was 35px */
-    gap: 25px;            /* was 35px */
+    padding: 22px 16px;   
+    gap: 25px;           
   }
 
   .attorney-info {
@@ -1784,10 +1779,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto -45px;
   }
 
-  /* .attorney-info {
-    margin-top: 40px;
-    padding: 60px 30px 30px;
-  } */
+  
 
   .attorney-info {
     margin-top: 40px;
