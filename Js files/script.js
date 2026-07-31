@@ -275,4 +275,50 @@ document.addEventListener("DOMContentLoaded", function () {
 
   }
 
+
+
+  /* ============================
+     FAQ Accordion
+  ============================ */
+
+  const faqToggles = document.querySelectorAll(".faq-toggle");
+
+  faqToggles.forEach(function (toggle) {
+
+    toggle.addEventListener("click", function () {
+
+      const panel = document.getElementById(toggle.getAttribute("aria-controls"));
+      const isOpen = toggle.getAttribute("aria-expanded") === "true";
+
+      // Close every other panel first (accordion: only one open at a time)
+      faqToggles.forEach(function (other) {
+        if (other !== toggle) {
+          other.setAttribute("aria-expanded", "false");
+          const otherPanel = document.getElementById(other.getAttribute("aria-controls"));
+          if (otherPanel) otherPanel.style.maxHeight = null;
+        }
+      });
+
+      // Toggle the clicked one
+      toggle.setAttribute("aria-expanded", String(!isOpen));
+
+      if (!isOpen && panel) {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } else if (panel) {
+        panel.style.maxHeight = null;
+      }
+
+    });
+
+  });
+
+  // Keep an open panel's height correct if the window is resized
+  // (e.g. text reflows to more/fewer lines on rotation)
+  window.addEventListener("resize", function () {
+    document.querySelectorAll('.faq-toggle[aria-expanded="true"]').forEach(function (toggle) {
+      const panel = document.getElementById(toggle.getAttribute("aria-controls"));
+      if (panel) panel.style.maxHeight = panel.scrollHeight + "px";
+    });
+  });
+
 });

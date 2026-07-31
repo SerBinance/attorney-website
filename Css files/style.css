@@ -3,28 +3,38 @@
   --nav-secondary: #d97328;
   --nav-btn-hover: #f99144;
   --nav-white: #fff;
-  --nav-font: "Open Sans", sans-serif;
-  --nav-font-alt: "Inter", sans-serif;
-  --nav-height: 96px; 
+  --nav-height: 96px;
   --hero-bg-fallback: #123267;
   --hero-accent-blue: #377bed; /* eyebrow text color */
   --hero-cta-bg: #d97328;
   --hero-cta-hover: #f99144;
-  --font-playfair: "Playfair Display", serif;
-  --font-opensans: "Open Sans", sans-serif;
   --color-black: #000;
-  --font-comicsans: "Comic Sans MS", "Comic Sans", cursive;
-  --font-georgia: "Georgia", "Times New Roman", serif;
   --gold-accent: rgb(180, 153, 0);
   --gold-secondary: #d4af37;
   --border-light: #ccc;
   --overlay-dark: rgba(0, 0, 0, 0.18);
   --bg-light: #f8f9fb;
   --gradient-dark: linear-gradient(to bottom, #000000 0%, #0d0d0d 95%, #111111a2 100%);
+
+  /* ============================================================
+     TYPOGRAPHY SYSTEM — 3 fonts, uniform across the site
+     - Headings (h1/h2/h3):        Playfair Display (from the Hero headline)
+     - Body copy (p, bio, lists):  Open Sans (from the Hero subtext)
+     - Accents (nav, buttons,
+       eyebrows, labels):          Georgia (already used elsewhere on the page)
+     ============================================================ */
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Open Sans", sans-serif;
+  --font-accent: "Georgia", "Times New Roman", serif;
 }
 
 body {
   margin: 0;
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
 }
 
 /* ---------- Global Resets & Layout Common ---------- */
@@ -73,8 +83,7 @@ body {
 .intro-container,
 .approach-container,
 .pledge-container,
-.pi-container,
-.faq-container {
+.pi-container {
   display: flex;
   flex-wrap: wrap;
 }
@@ -123,6 +132,7 @@ body {
 .intro-text p,
 .approach-text p,
 .pledge-text p {
+  font-family: var(--font-body);
   font-size: 18px;
   line-height: 1.6;
 }
@@ -130,11 +140,11 @@ body {
 .intro-text h2,
 .approach-text h2,
 .pledge-text h2 {
-  font-family: "DM Serif Display", serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 50px;
   line-height: 55px;
-  
+
   color: var(--gold-accent);
   margin: 0 0 1rem;
 }
@@ -151,6 +161,7 @@ body {
   padding: 17px;
   background-color: var(--nav-secondary);
   color: var(--nav-white);
+  font-family: var(--font-accent);
   font-size: 16px;
   font-weight: bold;
   line-height: 22px;
@@ -192,6 +203,7 @@ body {
   display: inline-block;
   background-color: var(--nav-secondary);
   color: var(--nav-white);
+  font-family: var(--font-accent);
   font-size: 14px;
   font-weight: 600;
   padding: 12px 20px;
@@ -233,16 +245,12 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-  /* background-color: rgb(0, 0, 0); */
-  
-  
   background: var(--gradient-dark);
   border-bottom: 1px solid rgba(100, 100, 100, 0.938) ;
-    
+
   background-position: center;
   background-size: cover;
   padding: 5px 0 8px;
-  /* transition: background-color 0.2s ease; */
 }
 
 .header-main.is-scrolled {
@@ -277,10 +285,10 @@ body {
 }
 
 .navbar-brand img {
-  
+
   max-width: 80px;
   border-radius: 40px;
-  
+
   height: auto;
   margin-bottom: -40px;
 }
@@ -358,7 +366,7 @@ body {
   display: none;
   text-align: right;
   margin: 0 0 12px;
-  font-family: var(--nav-font-alt);
+  font-family: var(--font-accent);
   font-size: 15px;
   color: var(--nav-white);
   text-transform: uppercase;
@@ -407,7 +415,7 @@ body {
   display: inline-block;
   padding: 1rem 0.5rem;
   color: var(--nav-white);
-  font-family: var(--font-comicsans);
+  font-family: var(--font-accent);
   font-size: 16px;
   background: none;
   border: none;
@@ -434,6 +442,7 @@ body {
 .dropdown-item {
   display: block;
   padding: 8px 12px;
+  font-family: var(--font-accent);
   color: var(--nav-white) !important;
   background-color: var(--nav-secondary);
   border-bottom: 1px solid var(--border-light);
@@ -449,9 +458,8 @@ body {
    2. SECTION-HERO
    ============================================================ */
 
-   
+
 .hero {
-  /* position: relative; */
   display: block;
   color: var(--nav-white);
   background: linear-gradient(
@@ -460,7 +468,7 @@ body {
         #0d0d0d 40%,
         var(--nav-white) 100%
   );
-  
+
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -475,8 +483,6 @@ body {
 .hero-img-guy {
   flex: 1;
   text-align: right;
-
-
 }
 
 .hero-img{
@@ -486,7 +492,6 @@ body {
 }
 
 .hero-inner {
-  /* position: relative; */
   z-index: 2;
   max-width: 745px;
   padding: 100px 0 230px 50px;
@@ -494,8 +499,8 @@ body {
 
 .hero-eyebrow {
   margin: 2.5rem 0 0.5rem;
-  
-  font-family: var(--font-comicsans);
+
+  font-family: var(--font-accent);
   font-size: 1.5rem; /* 20px */
   font-weight: bold;
   letter-spacing: -0.4px;
@@ -505,25 +510,24 @@ body {
 .hero-headline {
   margin: 1.5rem 0 1.5rem;
   padding-bottom: 0.5rem;
-  font-family: var(--font-playfair);
+  font-family: var(--font-heading);
   font-size: 65px;
   line-height: 70px;
   font-weight: bold;
   color: var(--nav-white);
   width: 80%;
-  
+
 }
 
 .hero-subtext {
   padding-bottom: 0.5rem;
-  font-family: var(--font-opensans);
+  font-family: var(--font-body);
   font-size: 18px;
   line-height: 1.5;
 }
 
 .hero-cta {
   margin-top: 10px;
-  font-family: var(--font-opensans);
   border-radius: 0;
 }
 
@@ -537,6 +541,7 @@ body {
 .badges-heading {
   margin: 0 0 20px;
   text-align: center;
+  font-family: var(--font-accent);
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 1px;
@@ -607,19 +612,9 @@ body {
    5. APPROACH
    ============================================================ */
 
-/* Tighter top/bottom padding just for this section (overrides the
-   shared 2.5rem rule above via source order, same specificity) */
 .approach {
   padding: 1rem 0;
 }
-
-/* Text first, image below it — applies at every breakpoint since
-   .approach-container is flex/wrap and these are the base rules. */
-
-/* .approach-media {
-  order: 2;
-  padding-top: 0;
-} */
 
 .approach-text {
   order: 1;
@@ -648,7 +643,7 @@ body {
 
 .pledge-text strong{
   color: var(--gold-secondary)
-  
+
 }
 
 .pledge-text a{
@@ -697,13 +692,14 @@ body {
 }
 
 .pi-left p {
+  font-family: var(--font-body);
   font-size: 18px;
   line-height: 30px;
 }
 
 .pi-left p strong{
   color: var(--gold-secondary);
-  
+
 }
 
 .pi-left a {
@@ -724,6 +720,7 @@ body {
 }
 
 .pi-right p {
+  font-family: var(--font-body);
   font-size: 20px;
   line-height: 32px;
   margin-bottom: 35px;
@@ -747,6 +744,7 @@ body {
   align-items: center;
   gap: 15px;
   width: 100%;
+  font-family: var(--font-body);
   font-size: 20px;
   font-weight: bold;
 }
@@ -780,14 +778,13 @@ body {
 
 .attorney-heading h2 {
   color: var(--gold-accent);
-  font-family: var(--font-comicsans);
   font-size: 45px;
   margin-bottom: 12px;
-  
+
 }
 
 .attorney-heading p {
-  font-family: var(--font-georgia);
+  font-family: var(--font-accent);
   font-size: 22px;
   color: var(--hero-accent-blue);
   margin: 0;
@@ -819,7 +816,6 @@ body {
 }
 
 .attorney-info h3 {
-  font-family: var(--font-opensans);
   font-size: 38px;
   color: var(--nav-primary);
   margin: 0;
@@ -839,7 +835,7 @@ body {
 }
 
 .attorney-bio p {
-  font-family: var(--nav-font-alt);
+  font-family: var(--font-body);
   font-size: 18px;
   line-height: 1.9;
   color: #495057;
@@ -854,7 +850,7 @@ body {
   color: var(--nav-white);
   text-decoration: none;
   text-transform: uppercase;
-  font-family: var(--font-georgia);
+  font-family: var(--font-accent);
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -871,7 +867,7 @@ body {
 
 
 /* ============================================================
-   9. FAQ
+   9. FAQ (Accordion)
    ============================================================ */
 .faq {
   background-image: url("https://cdn-hiobf.nitrocdn.com/TPAWEHMtqaHSEFDtcDDbfLkroIZlIBUX/assets/images/optimized/rev-82ae670/www.helpinginjuredpeople.com/wp-content/uploads/2023/05/shape-arrow.png");
@@ -880,36 +876,78 @@ body {
   padding: 150px 0 160px;
 }
 
-.faq-col {
-  flex: 0 0 100%;
-  max-width: 100%;
-  padding: 1rem;
+.faq-container {
+  display: block;
 }
 
-.faq h2 {
-  font-family: var(--font-playfair);
+.faq-heading {
+  text-align: center;
   font-size: 53px;
-  margin: 0 0 40px;
+  margin: 0 0 50px;
+}
+
+.faq-accordion {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .faq-item {
-  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.faq-item h3 {
-  font-family: var(--font-playfair);
+.faq-item:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.faq-question {
+  margin: 0;
+}
+
+.faq-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  padding: 26px 5px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: var(--font-heading);
   font-size: 24px;
   line-height: 1.3;
   font-weight: bolder;
-  margin: 0 0 10px;
   color: #a3551e;
-  
 }
 
-.faq-item p {
+.faq-toggle:hover {
+  color: var(--nav-secondary);
+}
+
+.faq-icon {
+  flex-shrink: 0;
+  font-size: 16px;
+  color: var(--nav-secondary);
+  transition: transform 0.3s ease;
+}
+
+.faq-toggle[aria-expanded="true"] .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.faq-panel p {
+  font-family: var(--font-body);
   font-size: 18px;
   line-height: 30px;
   margin: 0;
+  padding: 0 5px 26px;
 }
 /* ============================================================
    10. REVIEWS
@@ -919,7 +957,7 @@ body {
 }
 
 .reviews-eyebrow {
-  font-family: "Lexend", sans-serif;
+  font-family: var(--font-accent);
   font-weight: 500;
   font-size: 22px;
   color: var(--hero-accent-blue); /* bleu-de-france */
@@ -927,7 +965,6 @@ body {
 }
 
 .reviews-heading {
-  font-family: var(--font-playfair);
   font-size: 35px;
   margin: 0 0 55px;
 }
@@ -953,7 +990,6 @@ body {
 }
 
 .review-card h3 {
-  font-family: var(--font-opensans);
   font-size: 20px;
   line-height: 32px;
   margin: 0;
@@ -971,6 +1007,7 @@ body {
 }
 
 .review-card p {
+  font-family: var(--font-body);
   font-style: italic;
   font-size: 18px;
   line-height: 30px;
@@ -978,8 +1015,6 @@ body {
 }
 
 /* ---------- Reviews Carousel (mobile) ---------- */
-/* No-op on desktop by default; arrows/dots hidden until the mobile
-   media query below switches everything into carousel mode. */
 .reviews-carousel {
   position: relative;
   display: flex;
@@ -1064,12 +1099,12 @@ body {
 }
 
 .traffic-map-heading {
-  font-family: var(--font-playfair);
   font-size: 35px;
   margin: 0 0 30px;
 }
 
 .traffic-map-eyebrow {
+  font-family: var(--font-accent);
   font-weight: bold;
   color: var(--hero-accent-blue); /* bleu-de-france */
   margin: 0 0 5px;
@@ -1093,13 +1128,13 @@ body {
 }
 
 .office-heading {
-  font-family: var(--font-playfair);
   margin: 0 0 10px;
   text-align: center;
   font-size: 40px;
 }
 
 .office-subtext {
+  font-family: var(--font-body);
   color: var(--nav-primary); /* primary */
   font-size: 20px;
   line-height: 28px;
@@ -1136,6 +1171,7 @@ body {
 }
 
 .office-card p {
+  font-family: var(--font-body);
   margin: 0 0 10px;
 }
 
@@ -1162,7 +1198,7 @@ body {
 .site-footer {
   position: relative;
   color: var(--nav-white);
-  
+
   background: var(--gradient-dark);
   background-position: center;
   background-size: cover;
@@ -1208,6 +1244,7 @@ body {
 .footer-nav a {
   display: inline-block;
   padding: 10px 0;
+  font-family: var(--font-accent);
   font-size: 20px;
   line-height: 27px;
   font-weight: bold;
@@ -1226,6 +1263,7 @@ body {
 }
 
 .footer-copyright {
+  font-family: var(--font-body);
   margin: 0;
   font-size: 15px;
   line-height: 27px;
@@ -1261,7 +1299,6 @@ body {
 
 /* ---------- min-width: 768px ---------- */
 @media (min-width: 768px) {
-  /* 1. Navigation */
   .mobile-cta-bar {
     display: none;
   }
@@ -1269,10 +1306,6 @@ body {
   .top-bar-content {
     display: block;
   }
-
- 
-
-  /* 3. Badges: 33.333% base already gives 3-per-row at all sizes */
 }
 
 @media (max-width: 600px) {
@@ -1301,11 +1334,15 @@ body {
     width: 100%;
   }
 
+  .faq-toggle {
+    font-size: 19px;
+    padding: 20px 5px;
+  }
+
 }
 
 /* ---------- min-width: 992px ---------- */
 @media (min-width: 992px) {
-  /* 1. Navigation */
   .navbar-toggler {
     display: none;
   }
@@ -1343,7 +1380,7 @@ body {
     max-width: 50%;
   }
 
-  
+
 
   .intro-media{
     display: flex;
@@ -1374,18 +1411,10 @@ body {
     max-width: 41.67%;
   }
 
-  /* 9. FAQ */
-  .faq-col {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
   /* 12. Office */
   .office-container {
     text-align: left;
   }
-
-  
 
 }
 
@@ -1441,7 +1470,7 @@ body {
 
   .pledge-text{
     margin-top: 40px;
-  } 
+  }
 
   .pledge{
     display: none;
@@ -1451,7 +1480,7 @@ body {
     margin: -20px auto 15px;
   }
 
-  
+
   .hero-headline {
     font-size: 55px;
   }
@@ -1477,7 +1506,7 @@ body {
   }
 
   .intro-text-02{
-    display: block; 
+    display: block;
     margin: 40px auto;
   }
 
@@ -1490,7 +1519,7 @@ body {
     margin-bottom: -30px !important;
   }
 
-  
+
   /* 7, 9. Attorney Intro (PI Section), FAQ padding */
   .pi-section,
   .faq {
@@ -1504,7 +1533,7 @@ body {
   }
 
   /* 9. FAQ */
-  .faq h2 {
+  .faq-heading {
     font-size: 45px;
     margin-bottom: 25px;
   }
@@ -1524,7 +1553,7 @@ body {
     margin-bottom: 0;
   }
 
-  
+
 
   .dropdown-item {
     padding: 5px 18px;
@@ -1558,9 +1587,8 @@ body {
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
-    /* font-weight: bold; */
     letter-spacing: -0.5px;
-    font-family: var(--font-georgia);
+    font-family: var(--font-accent);
   }
 
   .dropdown-toggle[aria-expanded="true"] i {
@@ -1584,7 +1612,7 @@ body {
 
   .approach-text p{
     font-size: 20px;
-    
+
   }
 
   .approach-media  {
@@ -1635,6 +1663,11 @@ body {
     margin: 0 auto;
   }
 
+  /* 9. FAQ */
+  .faq-toggle {
+    text-align: left;
+  }
+
   /* 10. Reviews */
   .reviews-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1669,7 +1702,7 @@ body {
   /* 2. Hero */
   .hero .container{
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
   }
 
   .hero-inner {
@@ -1696,7 +1729,6 @@ body {
   .intro-text p,
   .pledge-text p, .approach-text p {
     font-size: 20px;
-    /* font-weight: 600; */
   }
 
   .pledge-container{
@@ -1718,10 +1750,6 @@ body {
     font-size: 35px;
     line-height: 45px;
   }
-
-  /* .approach-text p {
-    font-size: 16px;
-  } */
 
   /* 5, 6. Approach, Pledge alignment */
   .approach-text,
@@ -1766,9 +1794,13 @@ body {
   }
 
   /* 9. FAQ */
-  .faq h2 {
+  .faq-heading {
     font-size: 35px;
     margin-bottom: 15px;
+  }
+
+  .faq-toggle {
+    font-size: 18px;
   }
 
   /* 10. Reviews — carousel mode */
@@ -1841,12 +1873,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
   }
 
   .footer-logo{
     margin-bottom: 5px;
-    
+
   }
 
   .footer-nav{
@@ -1876,20 +1908,20 @@ body {
     margin: 0 auto;
   }
 
-  
+
 }
 
 /* ---------- max-width: 575px ---------- */
 @media (max-width: 575px) {
   /* 2. Hero */
-  
+
   .firm-logo {
-    
+
     position: relative;
     top: -20px;
     left: -10px;
     width: 50px;
-    
+
   }
 
   .hero{
@@ -1909,7 +1941,7 @@ body {
     width: 80%;
   }
 
-  
+
 
   /* 3. Badges */
   .badges-heading {
@@ -1918,7 +1950,7 @@ body {
 
   .badge-item img {
     max-width: 80px;
-    
+  }
 
   /* 4, 6. Intro, Pledge text sizes */
   .intro-text p,
@@ -1964,7 +1996,7 @@ body {
   }
 
   /* 9. FAQ */
-  .faq-item p {
+  .faq-panel p {
     font-size: 15px;
     line-height: 25px;
   }
