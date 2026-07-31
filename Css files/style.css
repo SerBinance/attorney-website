@@ -1544,7 +1544,7 @@ body {
 
   .approach-text p{
     font-size: 20px;
-    font-weight: 600;
+    
   }
 
   .approach-media  {
@@ -1654,9 +1654,9 @@ body {
 
   /* 4, 6. Intro, Pledge text sizes */
   .intro-text p,
-  .pledge-text p {
+  .pledge-text p, .approach-text p {
     font-size: 20px;
-    font-weight: 600;
+    /* font-weight: 600; */
   }
 
   .pledge-container{
@@ -1679,9 +1679,9 @@ body {
     line-height: 45px;
   }
 
-  .approach-text p {
+  /* .approach-text p {
     font-size: 16px;
-  }
+  } */
 
   /* 5, 6. Approach, Pledge alignment */
   .approach-text,
