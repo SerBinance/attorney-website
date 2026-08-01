@@ -3,18 +3,12 @@
   --nav-secondary: #d97328;
   --nav-btn-hover: #f99144;
   --nav-white: #fff;
-  --nav-font: "Open Sans", sans-serif;
-  --nav-font-alt: "Inter", sans-serif;
   --nav-height: 96px;
   --hero-bg-fallback: #123267;
   --hero-accent-blue: #377bed; /* eyebrow text color */
   --hero-cta-bg: #d97328;
   --hero-cta-hover: #f99144;
-  --font-playfair: "Playfair Display", serif;
-  --font-opensans: "Open Sans", sans-serif;
   --color-black: #000;
-  --font-comicsans: "Comic Sans MS", "Comic Sans", cursive;
-  --font-georgia: "Georgia", "Times New Roman", serif;
   --gold-accent: rgb(180, 153, 0);
   --gold-secondary: #d4af37;
   --border-light: #ccc;
@@ -26,10 +20,26 @@
     #0d0d0d 95%,
     #111111a2 100%
   );
+
+  /* ============================================================
+     TYPOGRAPHY SYSTEM — same 3 fonts as the homepage/about page
+     - Headings (h1/h2/h3):        Playfair Display
+     - Body copy (p, li, inputs):  Open Sans
+     - Accents (nav, buttons,
+       eyebrows, labels):          Georgia
+     ============================================================ */
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Open Sans", sans-serif;
+  --font-accent: "Georgia", "Times New Roman", serif;
 }
 
 body {
   margin: 0;
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
 }
 
 /* ---------- Global Resets & Layout Common ---------- */
@@ -66,6 +76,7 @@ body {
   padding: 17px;
   background-color: var(--nav-secondary);
   color: var(--nav-white);
+  font-family: var(--font-accent);
   font-size: 16px;
   font-weight: bold;
   line-height: 22px;
@@ -106,6 +117,7 @@ body {
   display: inline-block;
   background-color: var(--nav-secondary);
   color: var(--nav-white);
+  font-family: var(--font-accent);
   font-size: 14px;
   font-weight: 600;
   padding: 12px 20px;
@@ -273,7 +285,7 @@ body {
   display: none;
   text-align: right;
   margin: 0 0 12px;
-  font-family: var(--nav-font-alt);
+  font-family: var(--font-accent);
   font-size: 15px;
   color: var(--nav-white);
   text-transform: uppercase;
@@ -328,7 +340,7 @@ body {
   display: inline-block;
   padding: 1rem 0.5rem;
   color: var(--nav-white);
-  font-family: var(--font-comicsans);
+  font-family: var(--font-accent);
   font-size: 16px;
   background: none;
   border: none;
@@ -355,6 +367,7 @@ body {
 .dropdown-item {
   display: block;
   padding: 8px 12px;
+  font-family: var(--font-accent);
   color: var(--nav-white) !important;
   background-color: var(--nav-secondary);
   border-bottom: 1px solid var(--border-light);
@@ -414,7 +427,7 @@ body {
 .hero-eyebrow {
   margin: 2.5rem 0 0.5rem;
 
-  font-family: var(--font-comicsans);
+  font-family: var(--font-accent);
   font-size: 1.5rem; /* 20px */
   font-weight: bold;
   letter-spacing: -0.4px;
@@ -424,7 +437,7 @@ body {
 .hero-headline {
   margin: 1.5rem 0 1.5rem;
   padding-bottom: 0.5rem;
-  font-family: var(--font-playfair);
+  font-family: var(--font-heading);
   font-size: 65px;
   line-height: 70px;
   font-weight: bold;
@@ -434,14 +447,13 @@ body {
 
 .hero-subtext {
   padding-bottom: 0.5rem;
-  font-family: var(--font-opensans);
+  font-family: var(--font-body);
   font-size: 18px;
   line-height: 1.5;
 }
 
 .hero-cta {
   margin-top: 10px;
-  font-family: var(--font-opensans);
   border-radius: 0;
 }
 
@@ -475,7 +487,7 @@ body {
 .hero-contact-form textarea {
   width: 100%;
   padding: 14px 16px;
-  font-family: var(--font-opensans);
+  font-family: var(--font-body);
   font-size: 15px;
   color: var(--color-black);
   background-color: var(--nav-white);
@@ -511,6 +523,7 @@ body {
 
 .hcf-status {
   margin: 12px 0 0;
+  font-family: var(--font-body);
   font-size: 15px;
   font-weight: 600;
   min-height: 1.2em;
@@ -532,7 +545,7 @@ body {
 }
 
 .reviews-eyebrow {
-  font-family: "Lexend", sans-serif;
+  font-family: var(--font-accent);
   font-weight: 500;
   font-size: 22px;
   color: var(--hero-accent-blue); /* bleu-de-france */
@@ -540,7 +553,6 @@ body {
 }
 
 .reviews-heading {
-  font-family: var(--font-playfair);
   font-size: 35px;
   margin: 0 0 55px;
 }
@@ -571,7 +583,6 @@ body {
 }
 
 .review-card h3 {
-  font-family: var(--font-opensans);
   font-size: 20px;
   line-height: 32px;
   margin: 0;
@@ -589,6 +600,7 @@ body {
 }
 
 .review-card p {
+  font-family: var(--font-body);
   font-style: italic;
   font-size: 18px;
   line-height: 30px;
@@ -676,13 +688,13 @@ body {
 }
 
 .office-heading {
-  font-family: var(--font-playfair);
   margin: 0 0 10px;
   text-align: center;
   font-size: 40px;
 }
 
 .office-subtext {
+  font-family: var(--font-body);
   color: var(--nav-primary); /* primary */
   font-size: 20px;
   line-height: 28px;
@@ -719,6 +731,7 @@ body {
 }
 
 .office-card p {
+  font-family: var(--font-body);
   margin: 0 0 10px;
 }
 
@@ -789,6 +802,7 @@ body {
 .footer-nav a {
   display: inline-block;
   padding: 10px 0;
+  font-family: var(--font-accent);
   font-size: 20px;
   line-height: 27px;
   font-weight: bold;
@@ -807,6 +821,7 @@ body {
 }
 
 .footer-copyright {
+  font-family: var(--font-body);
   margin: 0;
   font-size: 15px;
   line-height: 27px;
@@ -971,7 +986,7 @@ body {
     justify-content: space-between;
     font-size: 20px;
     letter-spacing: -0.5px;
-    font-family: var(--font-georgia);
+    font-family: var(--font-accent);
   }
 
   .dropdown-toggle[aria-expanded="true"] i {
