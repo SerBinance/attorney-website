@@ -486,10 +486,13 @@ h1, h2, h3, h4, h5, h6 {
   text-align: right;
 }
 
-.hero-img{
+.hero-img {
   max-width: 100%;
   height: auto;
   margin-top: -50px;
+
+  -webkit-mask-image: linear-gradient(to bottom, #000 75%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 75%, transparent 100%);
 }
 
 .hero-inner {
@@ -525,6 +528,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-body);
   font-size: 18px;
   line-height: 1.5;
+  font-style: italic;
 }
 
 .hero-cta {
@@ -1439,6 +1443,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .attorney-photo {
     width: 300px;
+  }
+
+  .traffic-map{
+    display: none;
   }
 
 }
