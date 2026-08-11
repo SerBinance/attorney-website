@@ -15,14 +15,6 @@
   --overlay-dark: rgba(0, 0, 0, 0.18);
   --bg-light: #f8f9fb;
   --gradient-dark: linear-gradient(to bottom, #000000 0%, #0d0d0d 95%, #111111a2 100%);
-
-  /* ============================================================
-     TYPOGRAPHY SYSTEM — 3 fonts, uniform across the site
-     - Headings (h1/h2/h3):        Playfair Display (from the Hero headline)
-     - Body copy (p, bio, lists):  Open Sans (from the Hero subtext)
-     - Accents (nav, buttons,
-       eyebrows, labels):          Georgia (already used elsewhere on the page)
-     ============================================================ */
   --font-heading: "Playfair Display", serif;
   --font-body: "Open Sans", sans-serif;
   --font-accent: "Georgia", "Times New Roman", serif;
@@ -104,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 2.5rem 0;
 }
 
-/* Common structural columns for content-heavy text + media layouts (Intro, Approach, Pledge) */
+
 .intro-text,
 .intro-media,
 .approach-media,
@@ -153,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-/* Primary block buttons (Hero and PI Section) */
+
 .hero-cta,
 .pi-cta {
   display: inline-block;
@@ -177,9 +169,9 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--nav-white);
 }
 
-/* ============================================================
-   1. NAVIGATION
-   ============================================================ */
+
+/* NAVIGATION SECTION */
+
 .site-header a {
   text-decoration: none;
 }
@@ -288,7 +280,6 @@ h1, h2, h3, h4, h5, h6 {
 
   max-width: 80px;
   border-radius: 40px;
-
   height: auto;
   margin-bottom: -40px;
 }
@@ -455,10 +446,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--nav-white) !important;
 }
 
-/* ============================================================
-   2. SECTION-HERO
-   ============================================================ */
-
+/* HERO SECTION */
 
 .hero {
   display: block;
@@ -536,9 +524,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0;
 }
 
-/* ============================================================
-   3. BADGES
-   ============================================================ */
+/* BADGES SECTION */
+
 .badges {
   padding: 40px 0;
 }
@@ -581,9 +568,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/* ============================================================
-   4. INTRO
-   ============================================================ */
+/* INTRO SECTION */
+
 .intro {
   position: relative;
 }
@@ -613,9 +599,7 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
 }
 
-/* ============================================================
-   5. APPROACH
-   ============================================================ */
+/* APPROACH SECTION */
 
 .approach {
   padding: 1rem 0;
@@ -639,9 +623,9 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
 }
 
-/* ============================================================
-   6. PLEDGE
-   ============================================================ */
+
+/* PLEDGE SECTION */
+
 .pledge-text a {
   color: inherit;
 }
@@ -670,9 +654,8 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--overlay-dark);
 }
 
-/* ============================================================
-   7. ATTORNEY INTRO (PI SECTION)
-   ============================================================ */
+/* ATTORNEY INTRO - PI SECTION */
+
 .pi-section {
   color: var(--nav-white);
   background:
@@ -762,9 +745,8 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-/* ============================================================
-   8. ATTORNEY
-   ============================================================ */
+/* ATTORNEY SECTION */
+
 .attorney {
   padding: 100px 30px;
   background: linear-gradient(to bottom, var(--nav-white), var(--bg-light));
@@ -871,9 +853,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/* ============================================================
-   9. FAQ (Accordion)
-   ============================================================ */
+/* FAQ SECTION */
+
 .faq {
   background-image: url("https://cdn-hiobf.nitrocdn.com/TPAWEHMtqaHSEFDtcDDbfLkroIZlIBUX/assets/images/optimized/rev-82ae670/www.helpinginjuredpeople.com/wp-content/uploads/2023/05/shape-arrow.png");
   background-position: center;
@@ -954,9 +935,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0 5px 26px;
 }
-/* ============================================================
-   10. REVIEWS
-   ============================================================ */
+
+
+/* REVIEWS SECTION */
+
 .reviews {
   text-align: center;
 }
@@ -965,7 +947,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-accent);
   font-weight: 500;
   font-size: 22px;
-  color: var(--hero-accent-blue); /* bleu-de-france */
+  color: var(--hero-accent-blue); 
   margin: 0 0 5px;
 }
 
@@ -1004,7 +986,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   margin: 5px 0 18px;
   column-gap: 2px;
-  color: var(--nav-secondary); /* secondary/accent */
+  color: var(--nav-secondary); 
 }
 
 .review-card .five-stars i {
@@ -1033,7 +1015,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .review-nav {
-  display: none; /* shown only on mobile */
+  display: none; 
   flex: 0 0 auto;
   width: 46px;
   height: 46px;
@@ -1060,7 +1042,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .reviews-dots {
-  display: none; /* shown only on mobile */
+  display: none; 
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -1083,9 +1065,8 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.25);
 }
 
-/* ============================================================
-   11. TRAFFIC MAP
-   ============================================================ */
+
+/* TRAFFIC-MAP SECTION */
 .traffic-map {
   position: relative;
   background-color: rgba(180, 153, 0, 0.205);
@@ -1111,7 +1092,7 @@ h1, h2, h3, h4, h5, h6 {
 .traffic-map-eyebrow {
   font-family: var(--font-accent);
   font-weight: bold;
-  color: var(--hero-accent-blue); /* bleu-de-france */
+  color: var(--hero-accent-blue); 
   margin: 0 0 5px;
 }
 
@@ -1122,9 +1103,8 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid var(--border-light);
 }
 
-/* ============================================================
-   12. OFFICE
-   ============================================================ */
+/* OFFICE SECTION */
+
 .office-container {
   max-width: 700px;
   margin: 0 auto;
@@ -1140,7 +1120,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .office-subtext {
   font-family: var(--font-body);
-  color: var(--nav-primary); /* primary */
+  color: var(--nav-primary); 
   font-size: 20px;
   line-height: 28px;
   text-align: center;
@@ -1197,9 +1177,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 15px;
 }
 
-/* ============================================================
-   13. FOOTER
-   ============================================================ */
+
+/* FOOTER SECTION */
+
 .site-footer {
   position: relative;
   color: var(--nav-white);
@@ -1298,9 +1278,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
 }
 
-/* ============================================================
-   RESPONSIVE STYLES (MEDIA QUERIES)
-   ============================================================ */
+
+/* RESPOSIVENESS SECTION */
 
 /* ---------- min-width: 768px ---------- */
 @media (min-width: 768px) {
@@ -1373,8 +1352,7 @@ h1, h2, h3, h4, h5, h6 {
   .has-dropdown:hover > .dropdown-menu {
     display: block;
   }
-
-  /* 4, 5, 6. Intro, Approach, Pledge columns */
+  
   .intro-text,
   .intro-media,
   .approach-media,
@@ -1385,8 +1363,6 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 50%;
   }
 
-
-
   .intro-media{
     display: flex;
     align-items: center;
@@ -1396,7 +1372,6 @@ h1, h2, h3, h4, h5, h6 {
     min-height: auto;
   }
 
-  /* 5. Approach */
   .approach-img-desktop {
     display: block;
   }
@@ -1405,7 +1380,6 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 
-  /* 7. Attorney Intro (PI Section) */
   .pi-left {
     flex: 0 0 58.33%;
     max-width: 58.33%;
@@ -1416,7 +1390,6 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 41.67%;
   }
 
-  /* 12. Office */
   .office-container {
     text-align: left;
   }
@@ -1424,7 +1397,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 900px) {
-
   
   .attorney-card {
     flex-direction: column;
@@ -1454,7 +1426,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ---------- min-width: 2000px ---------- */
 @media (min-width: 2000px) {
-  /* 2. Hero */
+  
   .hero {
     height: 100vh;
     display: flex;
@@ -1464,7 +1436,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ---------- max-width: 1199px ---------- */
 @media (max-width: 1199px) {
-  /* 2. Hero */
   .hero-inner {
     max-width: 645px;
   }
@@ -1490,12 +1461,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: -20px auto 15px;
   }
 
-
   .hero-headline {
     font-size: 55px;
   }
 
-  /* 4, 5, 6. Intro, Approach, Pledge */
   .intro-text h2,
   .approach-text h2,
   .pledge-text h2 {
@@ -1529,26 +1498,21 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: -30px !important;
   }
 
-
-  /* 7, 9. Attorney Intro (PI Section), FAQ padding */
   .pi-section,
   .faq {
     padding: 120px 0 120px;
   }
 
-  /* 7. Attorney Intro (PI Section) */
   .pi-left h2 {
     font-size: 45px;
     margin-bottom: 25px;
   }
 
-  /* 9. FAQ */
   .faq-heading {
     font-size: 45px;
     margin-bottom: 25px;
   }
 
-  /* 10. Reviews */
   .review-card {
     padding: 0 40px 55px;
   }
@@ -1556,7 +1520,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ---------- max-width: 991px ---------- */
 @media (max-width: 991px) {
-  /* 1. Navigation */
+  
   .dropdown-menu.show {
     position: static;
     width: 100%;
@@ -1595,7 +1559,6 @@ h1, h2, h3, h4, h5, h6 {
     color: transparent; 
   }
 
-
   .nav-link {
     width: 100%;
     display: flex;
@@ -1610,7 +1573,6 @@ h1, h2, h3, h4, h5, h6 {
     transform: rotate(180deg);
   }
 
-  /* 2. Hero */
   .hero-inner {
     max-width: 560px;
   }
@@ -1620,7 +1582,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 60px;
   }
 
-  /* 5. Approach */
   .approach-text {
     text-align: center;
   }
@@ -1637,27 +1598,23 @@ h1, h2, h3, h4, h5, h6 {
   .approach-media {
   order: 2;
   padding-top: 0;
-}
+  }
 
-  /* 6. Pledge */
   .pledge-text {
     text-align: center;
   }
 
-  /* 7, 9. Attorney Intro (PI Section), FAQ padding & alignment */
   .pi-section,
   .faq {
     padding: 70px 0 90px;
     text-align: center;
   }
 
-  /* 7. Attorney Intro (PI Section) */
   .pi-left img {
     margin-top: 40px;
     width: 100%;
   }
 
-  /* 8. Attorney */
   .attorney-heading h2 {
     font-size: 45px;
   }
@@ -1678,17 +1635,14 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
   }
 
-  /* 9. FAQ */
   .faq-toggle {
     text-align: left;
   }
 
-  /* 10. Reviews */
   .reviews-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* 13. Footer */
   .site-footer {
     padding-top: 150px;
   }
@@ -1714,7 +1668,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ---------- max-width: 767px ---------- */
 @media (max-width: 767px) {
-  /* 2. Hero */
+  
   .hero .container{
     flex-direction: column;
     align-items: center;
@@ -1740,7 +1694,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
   }
 
-  /* 4, 6. Intro, Pledge text sizes */
   .intro-text p,
   .pledge-text p, .approach-text p {
     font-size: 20px;
@@ -1758,7 +1711,6 @@ h1, h2, h3, h4, h5, h6 {
 
   }
 
-  /* 4, 5, 6. Intro, Approach, Pledge headings and alignment */
   .intro-text h2,
   .approach-text h2,
   .pledge-text h2 {
@@ -1766,19 +1718,16 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 45px;
   }
 
-  /* 5, 6. Approach, Pledge alignment */
   .approach-text,
   .pledge-text {
     text-align: center;
   }
 
-  /* 7, 9. Attorney Intro (PI Section), FAQ padding */
   .pi-section,
   .faq {
     padding: 60px 0 65px;
   }
 
-  /* 8. Attorney */
   .attorney-heading h2 {
     font-size: 35px;
   }
@@ -1791,8 +1740,6 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 260px;
     margin: 0 auto -45px;
   }
-
-  
 
   .attorney-info {
     margin-top: 40px;
@@ -1810,7 +1757,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
   }
 
-  /* 9. FAQ */
   .faq-heading {
     font-size: 35px;
     margin-bottom: 15px;
@@ -1820,7 +1766,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
   }
 
-  /* 10. Reviews — carousel mode */
   .review-nav {
     display: flex;
   }
@@ -1861,18 +1806,15 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 5px;
   }
 
-  /* 11. Traffic Map */
   .traffic-map-embed {
     height: 450px;
   }
 
-  /* 12. Office */
   .office-card h3 {
     font-size: 25px;
     line-height: 30px;
   }
 
-  /* 13. Footer */
   .site-footer::before {
     height: 138px;
   }
@@ -1930,10 +1872,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ---------- max-width: 575px ---------- */
 @media (max-width: 575px) {
-  /* 2. Hero */
-
+  
   .firm-logo {
-
     position: relative;
     top: -20px;
     left: -10px;
@@ -1958,9 +1898,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 80%;
   }
 
-
-
-  /* 3. Badges */
   .badges-heading {
     font-size: 15px;
   }
@@ -1969,18 +1906,15 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 80px;
   }
 
-  /* 4, 6. Intro, Pledge text sizes */
   .intro-text p,
   .pledge-text p {
     font-size: 15px;
   }
 
-  /* 5. Approach */
   .approach-text p {
     font-size: 15px;
   }
 
-  /* 7. Attorney Intro (PI Section) */
   .pi-left p {
     font-size: 15px;
     line-height: 25px;
@@ -2006,19 +1940,16 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
   }
 
-  /* 8. Attorney */
   .attorney-info .btn {
     min-width: unset;
     width: 100%;
   }
 
-  /* 9. FAQ */
   .faq-panel p {
     font-size: 15px;
     line-height: 25px;
   }
 
-  /* 12. Office */
   .office-subtext {
     font-size: 16px;
     line-height: 20px;
