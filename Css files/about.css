@@ -251,6 +251,12 @@ body {
   font-size: 11px;
 }
 
+.nav-item-home a i{
+    color: transparent; 
+}
+
+
+
 .nav-link,
 .dropdown-toggle {
   display: inline-block;

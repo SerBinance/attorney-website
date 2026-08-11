@@ -89,51 +89,44 @@ document.addEventListener("DOMContentLoaded", function () {
 
   dropdownToggles.forEach(function (toggle) {
 
-    toggle.addEventListener("click", function (e) {
+  toggle.addEventListener("click", function (e) {
 
-      if (window.innerWidth >= 992) return;
+    if (window.innerWidth >= 992) return;
 
-      e.preventDefault();
+    const targetId = toggle.getAttribute("aria-controls");
+    const submenu = document.getElementById(targetId);
 
-      e.stopPropagation();
+    // No submenu? Let the browser follow the link.
+    if (!submenu) {
+      return;
+    }
 
-      const targetId = toggle.getAttribute("aria-controls");
+    e.preventDefault();
+    e.stopPropagation();
 
-      const submenu = document.getElementById(targetId);
+    const isOpen = submenu.classList.contains("show");
 
-      const isOpen = submenu.classList.contains("show");
+    dropdownToggles.forEach(function (item) {
 
+      const id = item.getAttribute("aria-controls");
+      const menu = document.getElementById(id);
 
-
-      dropdownToggles.forEach(function (item) {
-
-        const id = item.getAttribute("aria-controls");
-
-        const menu = document.getElementById(id);
-
-        if (menu) {
-
-          menu.classList.remove("show");
-
-          item.setAttribute("aria-expanded", "false");
-
-        }
-
-      });
-
-
-
-      if (!isOpen) {
-
-        submenu.classList.add("show");
-
-        toggle.setAttribute("aria-expanded", "true");
-
+      if (menu) {
+        menu.classList.remove("show");
+        item.setAttribute("aria-expanded", "false");
       }
 
     });
 
+    if (!isOpen) {
+      submenu.classList.add("show");
+      toggle.setAttribute("aria-expanded", "true");
+    }
+
   });
+
+});
+
 
 
 
