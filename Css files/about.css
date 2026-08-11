@@ -1066,7 +1066,8 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 170px;
   height: auto;
   position: relative;
-  top: 30px;
+  top: 20px;
+  
 }
 
 .navbar-toggler {
