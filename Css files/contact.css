@@ -20,14 +20,6 @@
     #0d0d0d 95%,
     #111111a2 100%
   );
-
-  /* ============================================================
-     TYPOGRAPHY SYSTEM — same 3 fonts as the homepage/about page
-     - Headings (h1/h2/h3):        Playfair Display
-     - Body copy (p, li, inputs):  Open Sans
-     - Accents (nav, buttons,
-       eyebrows, labels):          Georgia
-     ============================================================ */
   --font-heading: "Playfair Display", serif;
   --font-body: "Open Sans", sans-serif;
   --font-accent: "Georgia", "Times New Roman", serif;
@@ -54,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: border-box;
 }
 
-/* Common container style for content alignment */
+
 .hero .container,
 .reviews-container,
 .site-footer-container {
@@ -63,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 15px;
 }
 
-/* Common section padding */
+
 .reviews,
 .office {
   padding: 2.5rem 0;
@@ -91,9 +83,8 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--nav-white);
 }
 
-/* ============================================================
-   1. NAVIGATION
-   ============================================================ */
+
+/* NAVIGATION SECTION */
 .site-header a {
   text-decoration: none;
 }
@@ -159,15 +150,12 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 100%;
   z-index: 1000;
-  /* background-color: rgb(0, 0, 0); */
-
   background: var(--gradient-dark);
   border-bottom: 1px solid rgba(100, 100, 100, 0.938);
-
   background-position: center;
   background-size: cover;
   padding: 5px 0 8px;
-  /* transition: background-color 0.2s ease; */
+  
 }
 
 .header-main.is-scrolled {
@@ -379,12 +367,9 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--nav-white) !important;
 }
 
-/* ============================================================
-   2. SECTION-HERO
-   ============================================================ */
+/* HERO SECTION */
 
 .hero {
-  /* position: relative; */
   display: block;
   color: var(--nav-white);
   background: linear-gradient(
@@ -393,7 +378,6 @@ h1, h2, h3, h4, h5, h6 {
     #0d0d0d 40%,
     var(--nav-white) 100%
   );
-
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -418,7 +402,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-inner {
-  /* position: relative; */
   z-index: 2;
   max-width: 745px;
   padding: 100px 0 230px 50px;
@@ -426,9 +409,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-eyebrow {
   margin: 2.5rem 0 0.5rem;
-
   font-family: var(--font-accent);
-  font-size: 1.5rem; /* 20px */
+  font-size: 1.5rem; 
   font-weight: bold;
   letter-spacing: -0.4px;
   color: rgb(214, 203, 203);
@@ -457,7 +439,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0;
 }
 
-/* ---------- Hero Contact Form ---------- */
+
 .hero-contact-headline {
   font-size: 45px;
   line-height: 1.1;
@@ -537,9 +519,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #e0563f;
 }
 
-/* ============================================================
-   10. REVIEWS
-   ============================================================ */
+/* REVIEWS SECTION */
+
 .reviews {
   text-align: center;
 }
@@ -548,7 +529,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-accent);
   font-weight: 500;
   font-size: 22px;
-  color: var(--hero-accent-blue); /* bleu-de-france */
+  color: var(--hero-accent-blue); 
   margin: 0 0 5px;
 }
 
@@ -592,7 +573,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   margin: 5px 0 18px;
   column-gap: 2px;
-  color: var(--nav-secondary); /* secondary/accent */
+  color: var(--nav-secondary); 
 }
 
 .review-card .five-stars i {
@@ -608,8 +589,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ---------- Reviews Carousel (mobile) ---------- */
-/* No-op on desktop by default; arrows/dots hidden until the mobile
-   media query below switches everything into carousel mode. */
+
 .reviews-carousel {
   position: relative;
   display: flex;
@@ -623,7 +603,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .review-nav {
-  display: none; /* shown only on mobile */
+  display: none; 
   flex: 0 0 auto;
   width: 46px;
   height: 46px;
@@ -652,7 +632,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .reviews-dots {
-  display: none; /* shown only on mobile */
+  display: none; 
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -677,9 +657,8 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.25);
 }
 
-/* ============================================================
-   12. OFFICE
-   ============================================================ */
+/* OFFICE SECTION */
+
 .office-container {
   max-width: 700px;
   margin: 0 auto;
@@ -695,7 +674,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .office-subtext {
   font-family: var(--font-body);
-  color: var(--nav-primary); /* primary */
+  color: var(--nav-primary); 
   font-size: 20px;
   line-height: 28px;
   text-align: center;
@@ -752,13 +731,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 15px;
 }
 
-/* ============================================================
-   13. FOOTER
-   ============================================================ */
+/* FOOTER SECTION */
+
 .site-footer {
   position: relative;
   color: var(--nav-white);
-
   background: var(--gradient-dark);
   background-position: center;
   background-size: cover;
@@ -851,13 +828,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
 }
 
-/* ============================================================
-   RESPONSIVE STYLES (MEDIA QUERIES)
-   ============================================================ */
+/* RESPONSIVENESS SECTION */
 
 /* ---------- min-width: 768px ---------- */
 @media (min-width: 768px) {
-  /* 1. Navigation */
+  
   .mobile-cta-bar {
     display: none;
   }
@@ -875,8 +850,6 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
   
-  
-
   .navbar-nav {
     display: flex;
     width: auto;
@@ -899,7 +872,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
   }
 
-  /* 12. Office */
+  
   .office-container {
     text-align: left;
   }
@@ -907,7 +880,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ---------- min-width: 2000px ---------- */
 @media (min-width: 2000px) {
-  /* 2. Hero */
+  
   .hero {
     height: 100vh;
     display: flex;
@@ -917,7 +890,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ---------- max-width: 1199px ---------- */
 @media (max-width: 1199px) {
-  /* 2. Hero */
+  
   .hero-inner {
     max-width: 645px;
   }
@@ -925,8 +898,6 @@ h1, h2, h3, h4, h5, h6 {
   .hero-img-guy{
     display: none;
   }
-
-  
 
   .footer-logo img {
     margin: -20px auto 15px;
@@ -936,7 +907,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 55px;
   }
 
-  /* 10. Reviews */
   .review-card {
     padding: 0 40px 55px;
   }
@@ -944,7 +914,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ---------- max-width: 991px ---------- */
 @media (max-width: 991px) {
-  /* 1. Navigation */
+  
   .dropdown-menu.show {
     position: static;
     width: 100%;
@@ -956,7 +926,6 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: capitalize;
   }
 
-  /* Full-screen mobile nav overlay */
   .navbar-nav {
     position: fixed;
     top: var(--nav-height);
@@ -993,7 +962,6 @@ h1, h2, h3, h4, h5, h6 {
     transform: rotate(180deg);
   }
 
-  /* 2. Hero */
   .hero-inner {
     max-width: 560px;
   }
@@ -1003,12 +971,10 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 60px;
   }
 
-  /* 10. Reviews */
   .reviews-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* 13. Footer */
   .site-footer {
     padding-top: 150px;
   }
@@ -1034,7 +1000,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ---------- max-width: 767px ---------- */
 @media (max-width: 767px) {
-  /* 2. Hero */
+  
   .hero .container {
     flex-direction: column;
     align-items: center;
@@ -1054,7 +1020,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: auto;
   }
 
-  /* 10. Reviews — carousel mode */
   .review-nav {
     display: flex;
   }
@@ -1095,13 +1060,13 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 5px;
   }
 
-  /* 12. Office */
+  
   .office-card h3 {
     font-size: 25px;
     line-height: 30px;
   }
 
-  /* 13. Footer */
+  
   .site-footer::before {
     height: 138px;
   }
@@ -1151,12 +1116,19 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 300px;
     margin: 0 auto;
   }
+
+  .hero-contact-form {
+    max-width: 100%;
+  }
+
+  .hcf-row {
+    flex-direction: column;
+    gap: 0;
+  }
 }
 
 /* ---------- max-width: 575px ---------- */
 @media (max-width: 575px) {
-  /* 2. Hero */
-
   .firm-logo {
     position: relative;
     top: -20px;
@@ -1181,21 +1153,9 @@ h1, h2, h3, h4, h5, h6 {
     width: 80%;
   }
 
-  /* 12. Office */
+  
   .office-subtext {
     font-size: 16px;
     line-height: 20px;
-  }
-}
-
-/* ---------- Hero Contact Form (mobile) ---------- */
-@media (max-width: 767px) {
-  .hero-contact-form {
-    max-width: 100%;
-  }
-
-  .hcf-row {
-    flex-direction: column;
-    gap: 0;
   }
 }

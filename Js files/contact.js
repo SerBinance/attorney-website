@@ -8,9 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
 
-  /* ============================
-     Sticky Header
-  ============================ */
+  // STICKY HEADER
 
   function sizeHeaderSpacer() {
     if (headerMain && headerSpacer) {
@@ -37,10 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", updateScrolledState);
 
 
-
-  /* ============================
-     Mobile Menu
-  ============================ */
+  // MOBILE MENU
 
   if (navToggler && menuMain) {
 
@@ -82,10 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 
-
-  /* ============================
-     Mobile Dropdowns
-  ============================ */
+  // MOBILE DROPDOWNS
 
   dropdownToggles.forEach(function (toggle) {
 
@@ -127,11 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-
-
-  /* ============================
-     Desktop Click Outside
-  ============================ */
+  // DESKTOP CLICKING OUTSIDE
 
   document.addEventListener("click", function (e) {
 
@@ -157,12 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   });
 
-
-
-  /* ============================
-     Close Mobile Menu
-     when resizing
-  ============================ */
+  // CLOSING MENU WHEN RESIZING 
 
   window.addEventListener("resize", function () {
 
@@ -182,10 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
-
-  /* ============================
-     Reviews Carousel (mobile)
-  ============================ */
+  // REVIEWS FOR MOBILE
 
   const reviewsGrid = document.getElementById("reviewsGrid");
 
@@ -268,10 +248,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 
-
-  /* ============================
-     Hero Contact Form (Web3Forms)
-  ============================ */
+  // HERO SECTION
 
   const heroContactForm = document.getElementById("heroContactForm");
 
